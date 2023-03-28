@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Александр Савичев](https://up.htmlacademy.ru/adaptive/28/user/2069823).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
