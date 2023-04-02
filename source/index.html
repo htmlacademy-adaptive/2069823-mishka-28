@@ -48,23 +48,25 @@
 
     <main class="main-container">
 
+      <!--SECTION HERO-->
+
       <section class="hero">
         <div class="hero__wrapper">
-          <h1 class="hero__title">Милые штуки ручнойработы для дома</h1>
+          <h1 class="hero__title">Милые штуки ручной работы для дома</h1>
         </div>
-        <ul class="hero__list"> <!-- Тут надо подумать все таки блок или нет-->
+        <ul class="hero__list">
           <li class="hero__item">
             <button class="hero-button" type="button">
-              <p class="hero-button__title">Предметы интерьера</p>
-              <svg class="hero-button__icon" width="40" height="62"> <!-- Тут надо подумать как вставить, можно ли использовать спрайты-->
+              <span class="hero-button__title">Предметы интерьера</span>
+              <svg class="hero-button__icon" width="40" height="62">
                 <use xlink:href=""></use>
               </svg>
             </button>
           </li>
           <li class="hero__item hero__item--toys">
             <button class="hero-button" type="button">
-              <p class="hero-button__title">Детские игрушки</p>
-              <svg class="hero-button__icon" width="40" height="62"><!-- Тут надо подумать как вставить, можно ли использовать спрайты-->
+              <span class="hero-button__title">Детские игрушки</span>
+              <svg class="hero-button__icon" width="40" height="62">
                 <use xlink:href=""></use>
               </svg>
             </button>
@@ -72,6 +74,149 @@
         </ul>
       </section>
 
+      <!--SECTION PRODUCT-->
+
+      <section class="product">
+        <h2 class="product__title">Вязанные корзинки</h2>
+        <span class="product__subtitle">Товар недели</span>
+        <p class="product__description">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках и трёх размерах.
+        </p>
+        <dl class="product__options">
+          <dt>Цвет:</dt>
+          <dd>тиффани/серый</dd>
+          <dt>Диаметр:</dt>
+          <dd>25 см</dd>
+          <dt>Высота:</dt>
+          <dd>15 см</dd>
+        </dl>
+        <img class="product__image"  src="#" width="260" height="315" alt="Три вязанные корзинки">
+        <p class="product__price">Цена:<span class="product__price-volume">990 руб.</span></p>
+        <button class="button" type="button">Заказать</button>
+      </section>
+
+      <!--SECTION ABOUT-->
+
+      <section class="about">
+        <h2 class="about__title">Коротко о нас</h2>
+        <div class="advantages">
+          <svg class="advantages__icon advantages__icon--flower" width="33" height="38">
+            <use xlink:href=""></use>
+          </svg>
+          <p class="advantages__title">Экологически чистые материалы</p>
+        </div>
+        <div class="advantages">
+          <svg class="advantages__icon advantages__icon--money" width="47" height="27">
+            <use xlink:href=""></use>
+          </svg>
+          <p class="advantages__title">Скандинавский стиль по российской цене</p>
+        </div>
+        <div class="advantages">
+          <svg class="advantages__icon advantages__icon--heart" width="34" height="27">
+            <use xlink:href=""></use>
+          </svg>
+          <p class="advantages__title">Увеличивает лайки на фотографиях</p>
+        </div>
+        <div class="advantages">
+          <svg class="advantages__icon advantages__icon--clew" width="35" height="34">
+            <use xlink:href=""></use>
+          </svg>
+          <p class="advantages__title">Связано вручную с любовью и умилением</p>
+        </div>
+        <div class="advantages">
+          <svg class="advantages__icon advantages__icon--rocket" width="55" height="23">
+            <use xlink:href=""></use>
+          </svg>
+          <p class="advantages__title">Поддержка отечественного производителя</p>
+        </div>
+        <div class="advantages advantages__icon--box">
+          <svg class="advantages__icon" width="33" height="32">
+            <use xlink:href=""></use>
+          </svg>
+          <p class="advantages__title">Поставляется в подарочной упаковке</p>
+        </div>
+      </section>
+
+      <!--SECTION REVIEWS-->
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <p class="reviews__text">
+                  Я молодая мама, но всё равно фотографии не набирали
+                  и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,
+                  я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                  стильными, а также набирают больше лайков!
+                </p>
+                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                <cite class="reviews__author-email">@misssssiskras</cite>
+              </div>
+            </blockquote>
+          </div>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <button class="reviews__write button" type="button">Написать</button>
+        </div>
+      </section>
+
+      <!--SECTION CONTACTS-->
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__options">
+          <dt class="contacts__text">e-mail:</dt> 
+          <dd class="contacts__text">info@mimimishkashop.ru</dd>
+          <dt class="contacts__text">адрес:</dt>
+          <dd class="contacts__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+        </dl>
+        <img class="contacts__image" width="320" height="455" src="#" alt="Карта с отметкой адреса">
+        <button class="button" type="button">Напишите нам</button>
+      </section>
     </main>
+
+     <!--FOOTER-->
+
+    <footer class="main-footer">
+      <div class="main-footer__logo">
+        <a class="logo" href="#">
+          <img class="logo__image" src="#" width="86" height="35" alt="Логотип интернет магазина Мишка">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+    <!--MODAL-BASKET-->
+
+    <div class="modal-basket">
+      <div class="modal-basket__wrapper">
+        <h2 class="modal-basket__title">Добавить в корзину</h2>
+        <span class="modal-basket__subtitle"> Выберите размер:</span>
+        <div class="modal-basket__wrapper-button">
+          <button class="button" type="button">S</button>
+          <button class="button" type="button">M</button>
+          <button class="button" type="button">L</button>
+        </div>
+        <button class="modal-basket--button button" type="button">Добавить</button>
+      </div>
+    </div>
   </body>
 </html>

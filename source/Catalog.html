@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+
+    <!--HEADER-->
+
+    <header class="main-header">
+      <a class="logo" href="#">
+        <img class="logo__image" src="#" width="86" height="35" alt="Логотип интернет магазина Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню.</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <svg class="user-list__search-icon" width="18" height="18">
+                <use xlink:href=""></use>
+              </svg>
+              <form class="user-list__search" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="search">Поиск по сайту.</label>
+                <input class="user-list__input" type="search" id="search" placeholder="Поиск по сайту">
+              </form>
+            </li>
+            <li class="user-list__item">
+              <svg class="user-list__search-icon" width="18" height="18">
+                <use xlink:href=""></use>
+              </svg>
+              <a href="">Корзина: <span class="user-list__basket">пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+
+    <main class="main-container">
+
+      <!--SECTION CATALOG-->
+
+      <section class="catalog">
+        <h2 class="catalog__title">Каталог товаров</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a class="catalog__card-link" href="#">
+                <img class="catalog__card-image" src="#" width="260" height="195" alt="Изображение вязанного зайчика">
+                <div class="catalog__card-content">
+                  <h3 class="catalog__card-title">Зайчик-попрыгайчик</h3>
+                  <span class="catalog__card-description">Рост 30 см, вес 200 г</span>
+                </div>
+              </a>
+              <div class="catalog__card-content">
+                <span class="catalog__card-price">1200 руб.</span>
+                <button class="catalog__card-basket" type="button"></button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__card-link" href="#">
+                <img class="catalog__card-image" src="#" width="260" height="195" alt="Изображение вязанной карзинки для белья">
+                <div class="catalog__card-content">
+                  <h3 class="catalog__card-title">Корзинка для белья</h3>
+                  <span class="catalog__card-description">Диаметр 15 см, высота 10 см</span>
+                </div>
+              </a>
+              <div class="catalog__card-content">
+                <span class="catalog__card-price">690 руб.</span>
+                <button class="catalog__card-basket" type="button"></button>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <a class="catalog__card-link" href="#">
+                <img class="catalog__card-image" src="#" width="260" height="195" alt="Изображение большой корзинки для игрушек">
+                <div class="catalog__card-content">
+                  <h3 class="catalog__card-title">Большая корзинка для игрушек</h3>
+                  <span class="catalog__card-description">Диаметр 30 см, высота 30 см</span>
+                </div>
+              </a>
+              <div class="catalog__card-content">
+                <span class="catalog__card-price">1500 руб.</span>
+                <button class="catalog__card-basket" type="button"></button>
+              </div>
+            </li>
+          </ul>
+      </section>
+
+      <!--SECTION MANUFACTURE-->
+
+      <section class="manufacture">
+        <h2 class="manufacture__title">Процесс производства</h2>
+        <video class="manufacture__video" width="156" height="48" src="#"></video>
+        <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="button" type="button">Сделать заказ</button>
+      </section>
+    </main>
+
+     <!--FOOTER-->
+
+    <footer class="main-footer">
+      <div class="main-footer__logo">
+        <a class="logo" href="#">
+          <img class="logo__image" src="#" width="86" height="35" alt="Логотип интернет магазина Мишка">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
+    <!--MODAL-BASKET-->
+
+    <div class="modal-basket">
+      <div class="modal-basket__wrapper">
+        <h2 class="modal-basket__title">Добавить в корзину</h2>
+        <span class="modal-basket__subtitle"> Выберите размер:</span>
+        <div class="modal-basket__wrapper-button">
+          <button class="button" type="button">S</button>
+          <button class="button" type="button">M</button>
+          <button class="button" type="button">L</button>
+        </div>
+        <button class="modal-basket--button button" type="button">Добавить</button>
+      </div>
+    </div>
+  </body>
+</html>
