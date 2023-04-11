@@ -1,0 +1,20 @@
+.hero {
+  &__item {
+    background-color: #63D1BB;
+    &--toys {
+      background-color: #56C3B2;
+      }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  &__button-title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+}

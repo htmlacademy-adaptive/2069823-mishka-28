@@ -1,0 +1,17 @@
+@use "../sass/base/variables.scss" as *;
+
+.contacts__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+.contacts__list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $grey;
+  }
+
+.contacts__link {
+    color: #000
+  }
