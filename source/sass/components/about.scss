@@ -1,10 +1,24 @@
+.about__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .about__title {
   font-size: 25px;
   line-height: 30px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
 }
 
 .about__item {
   font-size: 17px;
   line-height: 20px;
   list-style: none;
+}
+
+.about__text {
+  margin: 0 0 83px 0;
 }

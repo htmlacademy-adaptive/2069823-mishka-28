@@ -1,6 +1,8 @@
+@use "../base/variables.scss" as *;
+
 .main-nav {
   display: none;
-  background-color: #ffffff;
+  background-color: $white;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;

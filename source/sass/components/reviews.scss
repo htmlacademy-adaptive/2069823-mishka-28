@@ -1,4 +1,19 @@
- @use "../base/variables.scss" as *;
+@use "../base/variables.scss" as *;
+
+.reviews__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__quote {
+  margin: 0;
+  padding: 0;
+}
 
 .reviews__title {
   font-size: 25px;
@@ -6,6 +21,7 @@
 }
 
 .reviews__text {
+  margin-bottom: 18px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;

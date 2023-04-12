@@ -1,7 +1,7 @@
 @use "../sass/base/variables.scss" as *;
 
 .hero {
-  background-image: url(../img/hero.png);
+  background-image: url("../img/hero.png");
 }
 
 .hero__list {
@@ -26,7 +26,7 @@
 
 .hero__title {
   width: 260px;
-  margin: 0 auto ;
+  margin: 0 auto;
   padding: 73px 0 120px 0;
   text-align: center;
   font-weight: 700;
@@ -45,5 +45,5 @@
 }
 
 .hero__button-icon {
-  padding: 21px 36px 20px 0 ;
+  padding: 21px 36px 20px 0;
 }

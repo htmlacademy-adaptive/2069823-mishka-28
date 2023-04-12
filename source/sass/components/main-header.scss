@@ -1,5 +1,7 @@
+@use "../base/variables.scss" as *;
+
 .main-header {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .site-list__item,

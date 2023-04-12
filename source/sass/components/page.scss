@@ -1,3 +1,5 @@
+@use "../base/variables.scss" as *;
+
 .page {
   height: 100%;
   width: 320px;
@@ -12,8 +14,8 @@
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
 }
 
 .page__header {
