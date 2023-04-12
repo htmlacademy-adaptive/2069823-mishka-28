@@ -1,28 +1,31 @@
-.reviews {
+ @use "../base/variables.scss" as *;
 
-  &__title {
-    font-size: 25px;
-    line-height: 30px;
-  }
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+}
 
-  &__text {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    color: #444444;
-  }
+.reviews__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $grey;
+}
 
-  &__author-name {
-    font-style: normal;
-    font-size: 17px;
-    line-height: 24px;
-  }
+.reviews__author-name {
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
 
-  &__author-email {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 30px;
-    color: #444444;
-  }
+.reviews__author-email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: $grey;
+}
+
+.reviews__item {
+  list-style: none;
 }

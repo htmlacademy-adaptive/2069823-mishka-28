@@ -1,29 +1,36 @@
-.product {
-  &__title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  &__subtitle {
-    font-size: 17px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #63D1BB;
-  }
-  &__description {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444444;
-  }
-  &__options {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    color: #444444;
-  }
-  &__price {
-    font-size: 17px;
-    line-height: 24px;
-    color: #444444;
-  }
+@use "../base/variables.scss" as *;
+
+.product__title {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
 }
+
+.product__subtitle {
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $aqua;
+}
+
+.product__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+}
+
+.product__options {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $grey;
+}
+
+.product__price {
+  font-size: 17px;
+  line-height: 24px;
+  color: $grey;
+}
+

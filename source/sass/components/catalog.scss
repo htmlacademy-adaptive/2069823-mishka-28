@@ -1,0 +1,25 @@
+@use "../base/variables.scss" as *;
+
+.catalog__title {
+  font-size: 27px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+}
+
+.catalog__card-link-text {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog__card-description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: $grey;
+}
+
+.catalog__card-price {
+  font-size: 15px;
+  line-height: 24px;
+}
