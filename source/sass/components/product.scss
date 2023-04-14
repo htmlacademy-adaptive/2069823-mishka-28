@@ -1,0 +1,55 @@
+@use "../base/variables.scss" as *;
+
+.product__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.product__title {
+  margin: 31px 0 4px 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product__subtitle {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $aqua;
+}
+
+.product__description {
+  margin-bottom: 28px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+}
+
+.product__options {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $grey;
+}
+
+.product__text {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.product__image {
+  margin-bottom: 26px;
+}
+
+.product__price {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  color: $grey;
+}

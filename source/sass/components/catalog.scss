@@ -1,0 +1,51 @@
+@use "../base/variables.scss" as *;
+
+.catalog__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  width: 260px;
+  margin: 0 auto 30px;
+}
+
+.catalog__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  margin-bottom: 30px;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: $w_grey;
+}
+
+.catalog__card-image {
+  margin-bottom: 28px;
+}
+
+.catalog__card-link-text {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog__card-title {
+  margin-bottom: 6px;
+}
+
+.catalog__card-description {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: $grey;
+}
+
+.catalog__card-price {
+  font-size: 15px;
+  line-height: 24px;
+}

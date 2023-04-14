@@ -1,0 +1,52 @@
+@use "../base/variables.scss" as *;
+
+.order__title {
+  font-size: 27px;
+  line-height: 30px;
+  background-color: $w_grey;
+}
+
+.order__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey;
+}
+
+.order__form-title {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $aqua;
+}
+
+.order__list {
+  list-style: none;
+}
+
+.order__form-group {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order__instruction {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order__textarea,
+.order__text-input,
+.order__tel-input,
+.order__email-input {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order__button {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $grey;
+}

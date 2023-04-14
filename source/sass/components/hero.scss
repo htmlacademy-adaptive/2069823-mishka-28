@@ -1,0 +1,49 @@
+@use "../base/variables.scss" as *;
+
+.hero {
+  background-image: url("../img/hero.png");
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__item {
+  background-color: $aqua;
+  list-style: none;
+  min-height: 100px;
+}
+
+.hero__item--toys {
+  background-color: $aqua2;
+}
+
+.hero__button {
+  display: flex;
+  text-decoration: none;
+}
+
+.hero__title {
+  width: 260px;
+  margin: 0 auto;
+  padding: 73px 0 120px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.hero__button-title {
+  padding: 22px 84px 30px 32px;
+  display: block;
+  width: 130px;
+  height: 38px;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+}
+
+.hero__button-icon {
+  padding: 21px 36px 20px 0;
+}

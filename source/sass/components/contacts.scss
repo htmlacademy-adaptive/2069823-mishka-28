@@ -1,0 +1,28 @@
+@use "../base/variables.scss" as *;
+
+.contacts__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $grey;
+}
+
+.contacts__link {
+  color: $black;
+  text-decoration: none;
+  border-bottom: 1px solid $aqua3;
+}
+
+.contacts__image {
+  margin-bottom: 42px;
+}
+
+.contacts__button {
+  margin-bottom: 39px;
+}
