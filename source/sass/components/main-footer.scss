@@ -1,12 +1,5 @@
+@use "../base/variables.scss" as *;
+
 .main-footer {
-  background-color: #f1f1f1;
-}
-
-.copyright__text {
-  font-size: 19px;
-  line-height: 18px;
-}
-
-.social__item {
-  list-style: none;
+  background-color: $w_grey;
 }

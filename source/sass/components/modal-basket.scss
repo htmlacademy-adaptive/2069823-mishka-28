@@ -1,4 +1,4 @@
-@use "../sass/base/variables.scss" as *;
+@use "../base/variables.scss" as *;
 
 .modal-basket__title {
   font-size: 25px;
@@ -13,14 +13,14 @@
   color: $grey;
 }
 
-.modal__button-size {
+.modal-basket__button-size {
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $grey;
 }
 
-.modal__button {
+.modal-basket__button {
   color: $white;
   background-color: $aqua;
 }

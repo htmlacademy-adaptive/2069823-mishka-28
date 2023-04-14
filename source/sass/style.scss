@@ -2,6 +2,7 @@
 
 @use "../sass/base/base.scss";
 @use "../sass/base/fonts.scss";
+@use "../sass/base/mixin.scss";
 
 // Components
 
@@ -21,4 +22,4 @@
 @use "../sass/components/manufacture.scss";
 @use "../sass/components/order.scss";
 @use "../sass/components/button.scss";
-@use "../sass/components/social.scss";
+// @use "../sass/components/social.scss";

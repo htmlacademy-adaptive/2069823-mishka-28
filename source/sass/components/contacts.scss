@@ -1,4 +1,4 @@
-@use "../sass/base/variables.scss" as *;
+@use "../base/variables.scss" as *;
 
 .contacts__title {
   font-size: 25px;
@@ -16,7 +16,7 @@
 .contacts__link {
   color: $black;
   text-decoration: none;
-  border-bottom: 1px solid#62d1bA;
+  border-bottom: 1px solid $aqua3;
 }
 
 .contacts__image {
