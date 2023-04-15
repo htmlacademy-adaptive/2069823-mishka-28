@@ -3,3 +3,9 @@
 .main-header {
   background-color: $white;
 }
+
+.main-header__toggle {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

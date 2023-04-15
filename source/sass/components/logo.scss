@@ -1,4 +1,14 @@
 .logo {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+  }
+
+  @media (min-width: 1150px) {
+    top: 25px;
+    left: 50%;
+  }
 }
