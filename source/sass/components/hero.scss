@@ -2,17 +2,26 @@
 
 .hero {
   background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  // background-size: 100%;
+  object-fit: fill;
 }
 
 .hero__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .hero__item {
   background-color: $aqua;
   list-style: none;
   min-height: 100px;
+  width: 100%;
 }
 
 .hero__item--toys {
@@ -21,6 +30,7 @@
 
 .hero__button {
   display: flex;
+  justify-content: space-between;
   text-decoration: none;
 }
 
@@ -44,5 +54,5 @@
 }
 
 .hero__button-icon {
-  padding: 21px 36px 20px 0;
+  margin: 20px 50px 20px 0;
 }

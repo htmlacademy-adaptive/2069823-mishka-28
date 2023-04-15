@@ -3,3 +3,35 @@
 .main-footer {
   background-color: $w_grey;
 }
+
+.main-footer__wrapper {
+  height: 100px;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.main-footer__logo {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.main-footer__list {
+  list-style: none;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-footer__copyright-link {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+}

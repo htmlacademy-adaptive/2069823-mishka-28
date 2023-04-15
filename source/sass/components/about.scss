@@ -1,10 +1,6 @@
 @use "../base/variables.scss" as *;
 @use "../base/mixin.scss" as *;
 
-.about__wrapper {
-  margin: 0 auto;
-}
-
 .about__title {
   font-size: 25px;
   line-height: 30px;
@@ -13,6 +9,13 @@
 .about__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    flex-wrap: wrap;
+  }
 }
 
 .about__item {
@@ -22,5 +25,48 @@
 }
 
 .about__text {
+  display: block;
   margin: 0 0 83px 0;
+}
+
+.about__img-flower {
+  margin-bottom: 16px;
+  width: 33px;
+  height: 38px;
+  background-image: url(../img/flower.svg);
+}
+
+.about__img-money {
+  margin-bottom: 16px;
+  width: 47px;
+  height: 27px;
+  background-image: url(../img/money.svg);
+}
+
+.about__img-heart {
+  margin-bottom: 16px;
+  width: 34px;
+  height: 27px;
+  background-image: url(../img/heart.svg);
+}
+
+.about__img-clew {
+  margin-bottom: 16px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/clew.svg);
+}
+
+.about__img-rocket {
+  margin-bottom: 16px;
+  width: 55px;
+  height: 23px;
+  background-image: url(../img/rocket.svg);
+}
+
+.about__img-box {
+  margin-bottom: 16px;
+  width: 33px;
+  height: 32px;
+  background-image: url(../img/box.svg);
 }
