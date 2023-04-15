@@ -1,8 +1,6 @@
 @use "../base/variables.scss" as *;
 
 .contacts__wrapper {
-
-
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,6 +75,7 @@
 
 .contacts__image-flag {
   display: none;
+
   @media (min-width: 768px) {
     display: block;
     margin-left: auto;

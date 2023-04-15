@@ -3,6 +3,7 @@
 .manufacture {
   display: flex;
   flex-direction: column;
+
   @media (min-width: 1150px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,5 +58,4 @@
   position: absolute;
   top: 45px;
   left: 75px;
-
 }

@@ -2,6 +2,7 @@
 
 .reviews__wrapper {
   margin: 0 auto;
+
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,7 +21,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
-}
+  }
 }
 
 .reviews__quote {
@@ -31,8 +32,6 @@
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
-
-
 }
 
 .reviews__text {
@@ -83,7 +82,6 @@
     width: 100px;
     height: 50px;
     margin-left: auto;
-
   }
 }
 
@@ -94,6 +92,5 @@
     width: 100px;
     height: 50px;
     margin-left: calc(100% - 250px);
-
   }
 }
