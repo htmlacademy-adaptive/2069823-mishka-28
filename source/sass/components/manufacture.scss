@@ -1,7 +1,27 @@
 @use "../base/variables.scss" as *;
 
+.manufacture {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1150px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 15% 50% 20%;
+  }
+}
+
 .manufacture__wrapper {
+  position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    order: -1;
+  }
+
+  @media (min-width: 1150px) {
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
 }
 
 .manufacture__title {
@@ -26,4 +46,16 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $grey;
+}
+
+.manufacture__play {
+  background-image: url(../../img/play.png);
+  width: 100px;
+  height: 77px;
+  border: none;
+  border-radius: 25%;
+  position: absolute;
+  top: 45px;
+  left: 75px;
+
 }
