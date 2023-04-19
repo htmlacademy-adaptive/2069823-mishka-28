@@ -1,20 +1,52 @@
 @use "../base/variables.scss" as *;
 
 .main-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
   background-color: $white;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .main-header__toggle {
+  position: absolute;
+  top: 33px;
+  right: 30px;
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+
   @media (min-width: 768px) {
     display: none;
   }
 }
 
+.main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+}
+
 .main-header__logo {
+  margin: 0;
+  padding: 22px 0;
+  display: flex;
+
   @media (min-width: 768px) {
     position: absolute;
-    top: 25px;
-    left: 40px;
+    // top: 25px;
+    // left: 40px;
   }
 
   @media (min-width: 1150px) {

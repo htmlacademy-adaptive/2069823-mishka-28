@@ -3,13 +3,14 @@
 .hero {
   background-image: url("../img/hero.png");
   background-repeat: no-repeat;
-  // background-size: 100%;
-  object-fit: fill;
+  background-size: 100%;
 }
 
 .hero__list {
+  position: relative;
   margin: 0;
   padding: 0;
+  margin-bottom: 31px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -20,39 +21,60 @@
 .hero__item {
   background-color: $aqua;
   list-style: none;
-  min-height: 100px;
-  width: 100%;
+
+  &::before {
+    content: "";
+    background-image: url("../img/interior.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+  }
 }
 
 .hero__item--toys {
   background-color: $aqua2;
+
+  &::after {
+    content: "";
+    background-image: url("../img/toy.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 124px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .hero__button {
   display: flex;
-  justify-content: space-between;
+  padding: 24px 30px 31px 30px;
   text-decoration: none;
+  align-items: center;
 }
 
 .hero__title {
-  margin: 0 auto;
-  padding: 73px 0 120px 0;
+  padding: 73px 30px 120px;
+  margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: 768px) {
+    padding: 155px 0 503px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .hero__button-title {
-  padding: 22px 84px 30px 32px;
   display: block;
-  width: 130px;
-  height: 38px;
   font-size: 19px;
   line-height: 24px;
   color: $white;
 }
 
-.hero__button-icon {
-  margin: 20px 50px 20px 0;
-}

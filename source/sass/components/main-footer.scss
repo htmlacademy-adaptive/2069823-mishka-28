@@ -5,8 +5,6 @@
 }
 
 .main-footer__wrapper {
-  height: 100px;
-
   @media (min-width: 768px) {
     display: flex;
   }
@@ -21,18 +19,23 @@
 }
 
 .main-footer__list {
+  padding: 25px 59px 28px 59px;
   list-style: none;
-  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  border-bottom: 1px solid $bf_grey;
 }
 
 .main-footer__copyright-link {
-  width: 180px;
+  padding: 22px 39px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  color: $black;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 18px;
 }

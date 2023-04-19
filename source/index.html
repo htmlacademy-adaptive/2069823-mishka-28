@@ -10,7 +10,7 @@
 
     <!--HEADER-->
 
-    <header class="main-header">
+    <header class="main-header container">
       <a class="main-header__logo logo" href="index.html">
         <img class="logo__image" src="../img/logo.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
       </a>
@@ -64,13 +64,11 @@
           <li class="hero__item">
             <a class="hero__button" href="#">
               <span class="hero__button-title">Предметы <br> интерьера</span>
-              <img class="hero__button-icon" width="40" height="62" src="img/interior.svg" alt="Настольная лампа.">
             </a>
           </li>
           <li class="hero__item hero__item--toys">
             <a class="hero__button" href="#">
               <span class="hero__button-title">Детские <br> игрушки</span>
-              <img class="hero__button-icon" width="60" height="60" src="img/toy.svg" alt="Кубик лего.">
             </a>
           </li>
         </ul>
@@ -78,25 +76,25 @@
 
       <!--SECTION PRODUCT-->
 
-      <section class="product">
+      <section class="product container">
         <div class="product__wrapper">
-          <h2 class="product__title">Вязанные корзинки</h2>
+          <h2 class="product__title">Вязаные корзинки</h2>
           <span class="product__subtitle">Товар недели</span>
           <p class="product__description">Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках и трёх размерах.
           </p>
           <dl class="product__options">
-            <div class="product__wrapper">
-              <dt class="product__text">Цвет:</dt>
-              <dd class="product__text">тиффани/серый</dd>
+            <div class="product__options-wrapper">
+              <dt class="product__options-title">Цвет:</dt>
+              <dd class="product__options-text">тиффани/серый</dd>
             </div>
-            <div class="product__wrapper">
-              <dt class="product__text">Диаметр:</dt>
-              <dd class="product__text">25 см</dd>
+            <div class="product__options-wrapper">
+              <dt class="product__options-title">Диаметр:</dt>
+              <dd class="product__options-text">25 см</dd>
             </div>
-            <div class="product__wrapper">
-              <dt class="product__text">Высота:</dt>
-              <dd class="product__text">15 см</dd>
+            <div class="product__options-wrapper">
+              <dt class="product__options-title">Высота:</dt>
+              <dd class="product__options-text">15 см</dd>
             </div>
           </dl>
           <img class="product__image" src="/img/product.jpg" width="260" height="315" alt="Три вязанные корзинки.">
@@ -107,24 +105,24 @@
 
       <!--SECTION ABOUT-->
 
-      <section class="about">
+      <section class="about container">
         <h2 class="about__title">Коротко о нас</h2>
         <ul class="about__list">
           <li class="about__item">
             <div class="about__img-flower"></div>
-            <p class="about__text">Экологически чистые материалы</p>
+            <p class="about__text">Экологически <br> чистые материалы</p>
           </li>
           <li class="about__item">
             <div class="about__img-money"></div>
-            <p class="about__text">Скандинавский стиль по российской цене</p>
+            <p class="about__text">Скандинавский стиль <br> по российской цене</p>
           </li>
           <li class="about__item">
             <div class="about__img-heart"></div>
-            <p class="about__text">Увеличивает лайки на фотографиях</p>
+            <p class="about__text">Увеличивает лайки <br> на фотографиях</p>
           </li>
           <li class="about__item">
             <div class="about__img-clew"></div>
-            <p class="about__text">Связано вручную с любовью и умилением</p>
+            <p class="about__text">Связано вручную <br> с любовью и умилением</p>
           </li>
           <li class="about__item">
             <div class="about__img-rocket"></div>
@@ -132,14 +130,14 @@
           </li>
           <li class="about__item">
             <div class="about__img-box"></div>
-            <p class="about__text">Поставляется в подарочной упаковке</p>
+            <p class="about__text">Поставляется <br> в подарочной упаковке</p>
           </li>
         </ul>
       </section>
 
       <!--SECTION REVIEWS-->
 
-      <section class="reviews">
+      <section class="reviews container">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list">
@@ -179,8 +177,14 @@
               </blockquote>
             </li>
           </ul>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <div class="reviews__wrapper-button">
+            <button class="reviews__prev" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
           <button class="reviews__write button" type="button">Написать</button>
         </div>
       </section>
@@ -198,10 +202,17 @@
             </li>
             <li class="contacts__item">
               <span class="contacts__text">адрес:</span>
-              <span class="contacts__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
+              <span class="contacts__address">г. Санкт-Петербург <br> ул. Большая Конюшенная д. 19/8, офис 101</span>
             </li>
           </ul>
-          <img class="contacts__image-map" width="320" height="455" src="../img/map.jpg" alt="Карта с отметкой адреса">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6035350133839!2d30.32308574729501!3d59.93872066712469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1681917178912!5m2!1sru!2sru"
+          width="320"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
           <button class="contacts__button button" type="button">Напишите нам</button>
         </div>
       </section>
@@ -209,7 +220,7 @@
 
     <!--FOOTER-->
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo logo" href="#">
           <img class="logo__image" src="../img/logo.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
@@ -232,11 +243,10 @@
         </li>
         </ul>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="main-footer__copyright-text">Разработано:</span>
+          <span class="main-footer__copyright-text">Разработано</span>
           <svg class="main-footer__copyright-img" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#63D1BB"/></svg>
         </a>
       </div>
-
     </footer>
 
     <!--MODAL-BASKET-->
