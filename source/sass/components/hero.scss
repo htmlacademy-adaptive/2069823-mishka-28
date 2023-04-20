@@ -16,7 +16,16 @@
       height: 24px;
       background-image: url("../img/zigzag-line-24.png");
       background-repeat: repeat-x;
+
+      @media (min-width: 1150px) {
+        background-image: url("../img/zigzag-line-desktop.png");
+      }
     }
+  }
+
+  @media (min-width: 1150px) {
+    background-image: url("../img/hero-desktop.png");
+    background-size: contain;
   }
 }
 
@@ -107,6 +116,12 @@
     padding: 155px 0 503px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 158px 0 355px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

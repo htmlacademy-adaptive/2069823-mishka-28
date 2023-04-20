@@ -2,11 +2,23 @@
 
 .main-header {
   position: relative;
+  border-bottom: 1px solid rgba($black, 0.1);
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.main-header__wrapper {
   display: flex;
   justify-content: center;
   background-color: $white;
 
   @media (min-width: 768px) {
+    justify-content: end;
+  }
+
+  @media (min-width: 1150px) {
     display: block;
   }
 }
@@ -45,12 +57,15 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    // top: 25px;
-    // left: 40px;
+    padding: 0;
+    margin: 0;
+    top: 30%;
+    left: 50px;
   }
 
   @media (min-width: 1150px) {
-    top: 25px;
-    left: 50%;
+    position: absolute;
+    top: 30%;
+    left: 532px;
   }
 }

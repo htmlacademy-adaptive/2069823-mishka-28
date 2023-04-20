@@ -12,6 +12,12 @@
     line-height: 50px;
     padding: 56px 0 42px;
   }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 68px 0 39px 175px;
+  }
 }
 
 .about__list {
