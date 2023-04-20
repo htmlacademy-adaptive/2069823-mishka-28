@@ -75,6 +75,7 @@
   @media (min-width: 768px) {
     grid-column-start: 1;
     grid-column-end: 3;
+    width: 100%;
   }
 
   @media (min-width: 1150px) {
@@ -103,6 +104,12 @@
   width: 260px;
   height: 52px;
   border: 2px solid $grey;
+
+  @media (min-width: 768px) {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin-left: 0;
+  }
 
   @media (min-width: 1150px) {
     grid-column-start: 2;

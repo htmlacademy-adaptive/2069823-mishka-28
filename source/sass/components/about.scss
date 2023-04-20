@@ -6,6 +6,12 @@
   padding: 31px 0 28px;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 56px 0 42px;
+  }
 }
 
 .about__list {
@@ -15,7 +21,7 @@
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 491px;
     flex-wrap: wrap;
   }
 }
@@ -27,12 +33,22 @@
 
   &:last-child {
     margin-bottom: 58px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
   }
 }
 
 .about__text {
   display: block;
   margin: 0 0 32px 0;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 58px;
+  }
 }
 
 .about__img-flower {
@@ -40,6 +56,10 @@
   width: 33px;
   height: 38px;
   background-image: url("../img/flower.svg");
+
+  @media (min-width: 768px) {
+    margin: 0 296px 18px 0;
+  }
 }
 
 .about__img-money {
@@ -61,6 +81,10 @@
   width: 35px;
   height: 35px;
   background-image: url("../img/clew.svg");
+
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
 }
 
 .about__img-rocket {
@@ -68,6 +92,10 @@
   width: 55px;
   height: 23px;
   background-image: url("../img/rocket.svg");
+
+  @media (min-width: 768px) {
+    margin-bottom: 28px;
+  }
 }
 
 .about__img-box {
@@ -75,4 +103,8 @@
   width: 33px;
   height: 32px;
   background-image: url("../img/box.svg");
+
+  @media (min-width: 768px) {
+    margin-bottom: 21px;
+  }
 }
