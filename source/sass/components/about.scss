@@ -30,6 +30,10 @@
     height: 491px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: 1150px) {
+    padding: 0 180px;
+  }
 }
 
 .about__item {

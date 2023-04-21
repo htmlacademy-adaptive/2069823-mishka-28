@@ -36,6 +36,13 @@
     max-width: 1150px;
     margin: 0 auto;
   }
+
+  @media (min-width: 1150px) {
+    padding: 0 50px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .hero__list {
