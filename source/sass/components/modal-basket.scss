@@ -1,5 +1,9 @@
 @use "../base/variables.scss" as *;
 
+.modal-basket__wrapper {
+  display: none;
+}
+
 .modal-basket__title {
   font-size: 25px;
   line-height: 30px;

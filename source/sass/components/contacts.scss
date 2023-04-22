@@ -1,28 +1,135 @@
 @use "../base/variables.scss" as *;
 
+.contacts__wrapper {
+  position: relative;
+
+  @media (min-width: 1150px) {
+    display: grid;
+    grid-template-columns: 240px 350px 460px;
+    margin-bottom: 105px;
+  }
+}
+
+
 .contacts__title {
+  margin: 0;
+  padding: 38px 0 0 30px;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 22px 0 0 50px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    grid-column-start: 2;
+    padding: 90px 0 0 0;
+    margin-bottom: 35px;
+  }
 }
 
 .contacts__list {
+  padding: 0 30px;
   list-style: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: $grey;
+
+  @media (min-width: 768px) {
+    display: flex;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 0 0 50px;
+    margin: 0 0 49px 0;
+  }
+
+  @media (min-width: 1150px) {
+    display: block;
+    padding: 0;
+    margin: 0 0 85px 0;
+    grid-column-start: 2;
+  }
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__text {
+  width: 76px;
 }
 
 .contacts__link {
   color: $black;
   text-decoration: none;
   border-bottom: 1px solid $aqua3;
+
+  @media (min-width: 768px) {
+    margin-right: 50px;
+    border: 0;
+  }
 }
 
-.contacts__image {
+.contacts__address {
+  width: 183px;
+
+  @media (min-width: 768px) {
+    width: 230px;
+  }
+}
+
+.contacts__map {
   margin-bottom: 42px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 1150px) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+}
+
+.contacts__image-flag {
+  display: none;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    display: block;
+  }
+
+  @media (min-width: 1150px) {
+    top: 80px;
+    left: 150px;
+  }
 }
 
 .contacts__button {
-  margin-bottom: 39px;
+  margin: 0 30px 39px 30px;
+  width: 260px;
+  height: 52px;
+  border: 2px solid $grey;
+  background-color: $white;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin: 55px auto;
+  }
+
+  @media (min-width: 1150px) {
+    grid-column-start: 2;
+    margin: 0;
+  }
 }

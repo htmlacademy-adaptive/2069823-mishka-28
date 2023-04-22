@@ -1,49 +1,145 @@
 @use "../base/variables.scss" as *;
 
 .hero {
+  position: relative;
   background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-width: 768px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 98%;
+      right: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-line-24.png");
+      background-repeat: repeat-x;
+
+      @media (min-width: 1150px) {
+        background-image: url("../img/zigzag-line-desktop.png");
+      }
+    }
+  }
+
+  @media (min-width: 1150px) {
+    background-image: url("../img/hero-desktop.png");
+    background-size: contain;
+  }
+}
+
+.hero__wrapper {
+  @media (min-width: 768px) {
+    padding: 0 50px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 0 50px;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .hero__list {
+  position: relative;
   margin: 0;
   padding: 0;
+  margin-bottom: 31px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__item {
   background-color: $aqua;
   list-style: none;
-  min-height: 100px;
+  width: 100%;
+
+  &::before {
+    content: "";
+    background-image: url("../img/interior.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+
+    @media (min-width: 768px) {
+      top: 23px;
+      right: 55%;
+    }
+  }
 }
 
 .hero__item--toys {
   background-color: $aqua2;
+
+  &::after {
+    content: "";
+    background-image: url("../img/toy.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 124px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: 768px) {
+      top: 23px;
+      right: 36px;
+    }
+  }
 }
 
 .hero__button {
   display: flex;
+  padding: 24px 30px 31px 30px;
   text-decoration: none;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 25px 50px 34px 50px;
+  }
 }
 
 .hero__title {
-  width: 260px;
-  margin: 0 auto;
-  padding: 73px 0 120px 0;
+  padding: 73px 30px 120px;
+  margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: 768px) {
+    padding: 155px 0 503px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 158px 0 355px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .hero__button-title {
-  padding: 22px 84px 30px 32px;
   display: block;
-  width: 130px;
-  height: 38px;
   font-size: 19px;
   line-height: 24px;
   color: $white;
-}
 
-.hero__button-icon {
-  padding: 21px 36px 20px 0;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

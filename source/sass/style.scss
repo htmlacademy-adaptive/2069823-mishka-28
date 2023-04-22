@@ -6,6 +6,7 @@
 
 // Components
 
+@use "../sass/components/container.scss";
 @use "../sass/components/page.scss";
 @use "../sass/components/main-header.scss";
 @use "../sass/components/logo.scss";
@@ -22,4 +23,3 @@
 @use "../sass/components/manufacture.scss";
 @use "../sass/components/order.scss";
 @use "../sass/components/button.scss";
-// @use "../sass/components/social.scss";
