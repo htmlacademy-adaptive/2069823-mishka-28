@@ -10,11 +10,12 @@
 }
 
 .main-header__wrapper {
-  display: flex;
+  display: block;
   justify-content: center;
   background-color: $white;
 
   @media (min-width: 768px) {
+    display: flex;
     justify-content: end;
   }
 
@@ -50,10 +51,36 @@
   box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
+.main-header__toggle--open {
+  top: 40px;
+  right: 35px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-header__logo {
-  margin: 0;
+  margin-left: calc(50% - 43px);
   padding: 22px 0;
   display: flex;
+
 
   @media (min-width: 768px) {
     position: absolute;
