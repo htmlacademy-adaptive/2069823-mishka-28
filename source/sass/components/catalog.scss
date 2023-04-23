@@ -141,6 +141,12 @@
   }
 }
 
+.catalog__item:nth-child(3) .catalog__card-description {
+  @media (min-width: 1150px) {
+    padding: 0 0 10px 28px;
+  }
+}
+
 .catalog__card-content {
   display: flex;
   align-items: center;

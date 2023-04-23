@@ -19,16 +19,16 @@
 
     @media (min-width: 768px) {
       background-image: url("../img/zigzag-line-tablet.png");
-      background-repeat: repeat-x;
       top: 115%;
       height: 17px;
     }
 
     @media (min-width: 1150px) {
       background-image: url("../img/zigzag-line-desktop-2.png");
-      background-repeat: repeat-x;
       height: 23px;
-    }
+      margin-left: calc((100vw - 1050px) / 2);
+      background-repeat: no-repeat;
+     }
   }
 
   @media (min-width: 768px) {
@@ -42,7 +42,8 @@
   }
 
   @media (min-width: 1150px) {
-    background-size: 35%;
+    background-position-x: 50px;
+    background-size: 30%;
     margin-bottom: 161px;
   }
 }

@@ -13,6 +13,7 @@
   background-color: $w_grey;
   padding: 74px 33px;
   margin: 0 0 17px 0;
+  text-align: center;
 
   @media (min-width: 768px) {
     font-size: 43px;
@@ -35,6 +36,14 @@
       }
     }
   }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 102px 321px 96px 321px;
+    margin: 0 0 98px 0;
+    text-align: center;
+  }
 }
 
 .order__text {
@@ -47,6 +56,11 @@
   @media (min-width: 768px) {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 0 225px;
     margin-bottom: 63px;
   }
 }
@@ -437,7 +451,7 @@ fieldset {
 
   @media (min-width: 1150px) {
     bottom: 30px;
-    left: 500px;
+    left: 45%;
   }
 }
 
