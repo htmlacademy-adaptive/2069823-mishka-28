@@ -2,92 +2,97 @@
 @use "../base/mixin.scss" as *;
 
 .about__title {
-  margin: 0;
-  padding: 31px 0 28px;
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 82px;
 
-  @media (min-width: 768px) {
-    font-size: 43px;
-    line-height: 50px;
-    padding: 56px 0 42px;
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 43px;
+  //   line-height: 50px;
+  //   padding: 56px 0 42px;
+  // }
 
-  @media (min-width: 1150px) {
-    font-size: 53px;
-    line-height: 57px;
-    padding: 68px 0 39px 175px;
-  }
+  // @media (min-width: 1150px) {
+  //   font-size: 53px;
+  //   line-height: 57px;
+  //   padding: 68px 0 39px 175px;
+  // }
 }
 
 .about__list {
-  margin: 0;
-  padding: 0;
+  // @media (min-width: 768px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 491px;
+  //   flex-wrap: wrap;
+  // }
 
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    height: 491px;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: 1150px) {
-    padding: 0 180px;
-  }
+  // @media (min-width: 1150px) {
+  //   padding: 0 180px;
+  // }
 }
 
 .about__item {
+  position: relative;
   font-size: 17px;
   line-height: 20px;
   list-style: none;
 
-  &:last-child {
-    margin-bottom: 58px;
+  // &:last-child {
+  //   margin-bottom: 58px;
 
-    @media (min-width: 768px) {
-      margin: 0;
-    }
-  }
+  //   @media (min-width: 768px) {
+  //     margin: 0;
+  //   }
+  // }
 }
 
 .about__text {
   display: block;
-  margin: 0 0 32px 0;
+  margin-bottom: 83px;
 
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 22px;
-    margin-bottom: 58px;
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 20px;
+  //   line-height: 22px;
+  //   margin-bottom: 58px;
+  // }
+}
+
+.about__item:last-child .about__text {
+  margin-bottom: 0;
 }
 
 .about__img-flower {
-  margin-bottom: 16px;
+  position: absolute;
+  bottom: 57px;
   width: 33px;
   height: 38px;
   background-image: url("../img/flower.svg");
 
-  @media (min-width: 768px) {
-    margin: 0 296px 18px 0;
-  }
+  // @media (min-width: 768px) {
+  //   margin: 0 296px 18px 0;
+  // }
 }
 
 .about__img-money {
-  margin-bottom: 26px;
+  position: absolute;
+  bottom: 66px;
   width: 47px;
   height: 27px;
   background-image: url("../img/money.svg");
 }
 
 .about__img-heart {
-  margin-bottom: 21px;
+  position: absolute;
+  bottom: 60px;
   width: 34px;
   height: 27px;
   background-image: url("../img/heart.svg");
 }
 
 .about__img-clew {
-  margin-bottom: 17px;
+  position: absolute;
+  bottom: 54px;
   width: 35px;
   height: 35px;
   background-image: url("../img/clew.svg");
@@ -98,7 +103,8 @@
 }
 
 .about__img-rocket {
-  margin-bottom: 26px;
+  position: absolute;
+  bottom: 68px;
   width: 55px;
   height: 23px;
   background-image: url("../img/rocket.svg");
@@ -109,7 +115,8 @@
 }
 
 .about__img-box {
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 60px;
   width: 33px;
   height: 32px;
   background-image: url("../img/box.svg");
