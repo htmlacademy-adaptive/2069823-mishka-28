@@ -6,30 +6,35 @@
   line-height: 30px;
   margin-bottom: 82px;
 
-  // @media (min-width: 768px) {
-  //   font-size: 43px;
-  //   line-height: 50px;
-  //   padding: 56px 0 42px;
-  // }
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 98px;
+  }
 
-  // @media (min-width: 1150px) {
-  //   font-size: 53px;
-  //   line-height: 57px;
-  //   padding: 68px 0 39px 175px;
-  // }
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 96px;
+  }
 }
 
-.about__list {
-  // @media (min-width: 768px) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 491px;
-  //   flex-wrap: wrap;
-  // }
+.about .about__list:first-of-type {
+  margin-bottom: 83px;
 
-  // @media (min-width: 1150px) {
-  //   padding: 0 180px;
-  // }
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1150px) {
+    grid-template-columns: 350px 350px;
+  }
 }
 
 .about__item {
@@ -37,25 +42,17 @@
   font-size: 17px;
   line-height: 20px;
   list-style: none;
-
-  // &:last-child {
-  //   margin-bottom: 58px;
-
-  //   @media (min-width: 768px) {
-  //     margin: 0;
-  //   }
-  // }
 }
 
 .about__text {
   display: block;
   margin-bottom: 83px;
 
-  // @media (min-width: 768px) {
-  //   font-size: 20px;
-  //   line-height: 22px;
-  //   margin-bottom: 58px;
-  // }
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 111px;
+  }
 }
 
 .about__item:last-child .about__text {
@@ -69,9 +66,9 @@
   height: 38px;
   background-image: url("../img/flower.svg");
 
-  // @media (min-width: 768px) {
-  //   margin: 0 296px 18px 0;
-  // }
+  @media (min-width: 768px) {
+    bottom: 63px;
+  }
 }
 
 .about__img-money {
@@ -80,6 +77,10 @@
   width: 47px;
   height: 27px;
   background-image: url("../img/money.svg");
+
+  @media (min-width: 768px) {
+    bottom: 72px;
+  }
 }
 
 .about__img-heart {
@@ -88,6 +89,10 @@
   width: 34px;
   height: 27px;
   background-image: url("../img/heart.svg");
+
+  @media (min-width: 768px) {
+    bottom: 67px;
+  }
 }
 
 .about__img-clew {
@@ -98,7 +103,7 @@
   background-image: url("../img/clew.svg");
 
   @media (min-width: 768px) {
-    margin-bottom: 19px;
+    bottom: 62px;
   }
 }
 
@@ -110,7 +115,7 @@
   background-image: url("../img/rocket.svg");
 
   @media (min-width: 768px) {
-    margin-bottom: 28px;
+    bottom: 72px;
   }
 }
 
@@ -122,6 +127,6 @@
   background-image: url("../img/box.svg");
 
   @media (min-width: 768px) {
-    margin-bottom: 21px;
+    bottom: 66px;
   }
 }

@@ -6,6 +6,8 @@
   background-size: 100%;
 
   @media (min-width: 768px) {
+    background-image: url("../img/hero-tablet.jpg");
+
     &::after {
       content: "";
       display: flex;
@@ -14,11 +16,11 @@
       width: 100%;
       min-height: 24px;
       position: absolute;
-      bottom: 0;
+      bottom: -10px;
 
       @media (min-width: 1150px) {
         background-image: url("../img/zigzag-line-desktop.png");
-        bottom: -1px;
+        bottom: -7px;
       }
     }
   }
@@ -45,7 +47,7 @@
   line-height: 30px;
 
   @media (min-width: 768px) {
-    padding: 155px 0 503px;
+    padding: 155px 0 372px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -59,8 +61,6 @@
 
 .hero__list {
   position: relative;
-  margin: 0;
-  padding: 0;
 
   @media (min-width: 768px) {
     display: flex;
@@ -75,7 +75,7 @@
   padding: 24px 30px 31px 30px;
 
   @media (min-width: 768px) {
-    padding: 25px 50px 34px 50px;
+    padding: 25px 0 34px 36px;
   }
 }
 
@@ -91,8 +91,8 @@
     height: 62px;
 
     @media (min-width: 768px) {
-      top: 23px;
-      right: 55%;
+      top: 28px;
+      right: calc(50% + 36px);
     }
   }
 }
@@ -111,8 +111,8 @@
     height: 60px;
 
     @media (min-width: 768px) {
-      top: 23px;
-      right: 36px;
+      top: 30px;
+      right: 34px;
     }
   }
 }
