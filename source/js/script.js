@@ -1,7 +1,7 @@
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-header__toggle');
+let navMain = document.querySelector('.header-nav');
+let navToggle = document.querySelector('.header__toggle');
 
 navToggle.addEventListener('click', function () {
-  navMain.classList.toggle("main-nav__open");
-  navToggle.classList.toggle("main-header__toggle--open");
+  navMain.classList.toggle("header-nav__open");
+  navToggle.classList.toggle("header__toggle--open");
 });
