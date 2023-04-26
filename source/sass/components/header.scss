@@ -1,6 +1,6 @@
 @use "../base/variables.scss" as *;
 
-.main-header {
+.header {
   position: relative;
   border-bottom: 1px solid rgba($black, 0.1);
 
@@ -9,7 +9,7 @@
   }
 }
 
-.main-header__wrapper {
+.header__wrapper {
   display: block;
   justify-content: center;
   background-color: $white;
@@ -24,7 +24,7 @@
   }
 }
 
-.main-header__toggle {
+.header__toggle {
   position: absolute;
   top: 33px;
   right: 30px;
@@ -40,7 +40,7 @@
   }
 }
 
-.main-header__toggle::before {
+.header__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -51,7 +51,7 @@
   box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
-.main-header__toggle--open {
+.header__toggle--open {
   top: 40px;
   right: 35px;
 
@@ -76,7 +76,7 @@
   }
 }
 
-.main-header__logo {
+.header__logo {
   margin-left: calc(50% - 43px);
   padding: 22px 0;
   display: flex;
