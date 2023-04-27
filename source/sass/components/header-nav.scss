@@ -44,7 +44,7 @@
   }
 
   @media (min-width: 1150px) {
-    top: 30px;
+    top: 32px;
     max-width: 410px;
   }
 }
@@ -143,12 +143,15 @@
     margin-right: 37px;
   }
 
-  // @media (min-width: 1150px) {
-  //   position: relative;
-  //   top: 0;
-  //   left: 0;
-  //   padding: 33px 33px 32px 0;
-  // }
+  @media (min-width: 1150px) {
+    margin-right: 71px;
+  }
+}
+
+.header-nav__item-new {
+  @media (min-width: 1150px) {
+    margin-right: 62px;
+  }
 }
 
 // .header-nav__item-order {
