@@ -32,6 +32,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   @media (min-width: 1150px) {
     grid-template-columns: 350px 350px;
   }

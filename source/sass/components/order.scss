@@ -26,19 +26,21 @@
       background-image: url("../img/zigzag-line-24.png");
       background-repeat: repeat-x;
 
-  //     @media (min-width: 1150px) {
-  //       background-image: url("../img/zigzag-line-desktop.png");
-  //     }
+      @media (min-width: 1150px) {
+        background-image: url("../img/zigzag-desktop.png");
+        height: 34px;
+        top: 237px;
+      }
     }
   }
 
-  // @media (min-width: 1150px) {
-  //   font-size: 53px;
-  //   line-height: 57px;
-  //   padding: 102px 321px 96px 321px;
-  //   margin: 0 0 98px 0;
-  //   text-align: center;
-  // }
+  @media (min-width: 1150px) {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 102px 0 96px 0;
+    margin-bottom: 115px;
+    text-align: center;
+  }
 }
 
 .order__text {
@@ -54,10 +56,11 @@
     margin-bottom: 81px;
   }
 
-  // @media (min-width: 1150px) {
-  //   padding: 0 225px;
-  //   margin-bottom: 63px;
-  // }
+  @media (min-width: 1150px) {
+    padding: 0 225px;
+    // text-align: center;
+    margin-bottom: 79px;
+  }
 }
 
 .order__form-title {
@@ -79,12 +82,16 @@
     background-color: $aqua3;
 
     @media (min-width: 768px) {
-    display: none;
+      display: none;
     }
   }
 
   @media (min-width: 768px) {
     margin: 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 60px;
   }
 }
 
@@ -94,6 +101,10 @@
 
   @media (min-width: 768px) {
     padding-left: 208px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 158px;
   }
 }
 
@@ -165,6 +176,11 @@ fieldset {
     top: -17px;
     left: -78px;
   }
+
+  @media (min-width: 1150px) {
+    top: -16px;
+    left: -80px;
+  }
 }
 
 .order__radio-input[type="radio"]:checked + .order__radio-mark::before {
@@ -224,6 +240,12 @@ fieldset {
     grid-template-columns: 1fr 1fr;
     column-gap: 141px;
     padding-left: 204px;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 142px;
+    padding-left: 152px;
   }
 }
 
@@ -316,6 +338,11 @@ fieldset {
     padding-left: 125px;
     width: 100%;
   }
+
+  @media (min-width: 1150px) {
+    padding-left: 75px;
+    padding-right: 175px;
+  }
 }
 
 .order__text-label {
@@ -359,6 +386,11 @@ fieldset {
       top: 62px;
       right: 76px;
     }
+
+    @media (min-width: 1150px) {
+      top: 62px;
+      right: 236px;
+    }
   }
 
   @media (min-width: 768px) {
@@ -367,7 +399,12 @@ fieldset {
     padding: 50px 0 12px 0;
     margin: 0 auto;
   }
+
+  @media (min-width: 1150px) {
+    padding-right: 175px;
+  }
 }
+
 
 .order__tel-input {
   border: 0;
@@ -381,6 +418,10 @@ fieldset {
     width: calc(100% - 167px);
     margin-left: auto;
     padding: 11px 0 13px 16px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 85px;
   }
 }
 
@@ -412,6 +453,11 @@ fieldset {
       top: 28px;
       right: 72px;
     }
+
+    @media (min-width: 1150px) {
+      top: 28px;
+      right: 228px;
+    }
   }
 
   @media (min-width: 768px) {
@@ -419,6 +465,10 @@ fieldset {
     background-color: $w_grey;
     padding: 12px 0 50px 0;
     margin: 0 auto 50px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-right: 175px;
   }
 }
 
@@ -435,8 +485,11 @@ fieldset {
     font-size: 19px;
     padding: 11px 0 13px 16px;
   }
-}
 
+  @media (min-width: 768px) {
+    padding-left: 26px;
+  }
+}
 
 .order__form-email .order__form-title {
   margin-bottom: 4px;
@@ -455,7 +508,13 @@ fieldset {
     display: flex;
     margin-bottom: 53px;
   }
+
+  @media (min-width: 768px) {
+    padding-right: 225px;
+    margin-bottom: 50px;
+  }
 }
+
 
 .order__textarea {
   border: 2px solid $grey;
@@ -466,6 +525,10 @@ fieldset {
     width: calc(100% - 168px);
     font-size: 19px;
   }
+
+  @media (min-width: 768px) {
+    margin-left: 75px;
+  }
 }
 
 .order__form-area .order__form-title {
@@ -473,6 +536,10 @@ fieldset {
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
   }
 }
 
@@ -495,10 +562,10 @@ fieldset {
     line-height: 30px;
   }
 
-  // @media (min-width: 1150px) {
-  //   bottom: 30px;
-  //   left: 45%;
-  // }
+  @media (min-width: 1150px) {
+    top: 10px;
+    left: 54%;
+  }
 }
 
 .order__wrapper {
@@ -524,7 +591,7 @@ fieldset {
     font-size: 17px;
   }
 
-  // @media (min-width: 1150px) {
-  //   margin-left: 170px;
-  // }
+  @media (min-width: 1150px) {
+    margin-left: 175px;
+  }
 }
