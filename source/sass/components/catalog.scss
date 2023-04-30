@@ -95,6 +95,10 @@
     padding: 26px 30px 25px 32px;
     flex-grow: 1;
   }
+
+  @media (min-width: 1150px) {
+    padding: 26px 30px 25px 30px;
+  }
 }
 
 .catalog__inner {
@@ -114,6 +118,10 @@
 
   @media (min-width: 768px) {
     font-size: 20px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-right: 20px;
   }
 }
 
