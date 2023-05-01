@@ -144,9 +144,13 @@
 .product__image {
   margin-bottom: 20px;
   width: 100%;
+  object-fit: contain;
 
   @media (min-width: 768px) {
     margin: 12px 0 0 0;
+    width: auto;
+    height: auto;
+
   }
 
   @media (min-width: 1150px) {

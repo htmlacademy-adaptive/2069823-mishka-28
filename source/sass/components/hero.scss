@@ -3,8 +3,9 @@
 .hero {
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 -17px;
+  background-size: 320px auto;
+  background-position: center top -17px;
+  background-color: $background;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -12,11 +13,12 @@
 
   @media (min-width: 768px) {
     background-image: url("../img/hero-tablet.jpg");
-    background-position: 0 0;
+    background-size: 768px auto;
+    background-position: center;
+    // object-fit: fill;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 768px auto;
     }
 
     &::after {
@@ -42,6 +44,7 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1150px auto;
+      object-fit: contain;
     }
   }
 }
