@@ -12,14 +12,11 @@
   }
 }
 
-.footer__logo {
+.footer__logo-image {
   display: none;
 
   @media (min-width: 768px) {
     display: flex;
-    // Тут надо заменить при оптимизации графики
-    width: 102px;
-    height: 34px;
   }
 }
 

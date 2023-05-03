@@ -39,7 +39,6 @@
     line-height: 57px;
     padding: 102px 0 96px 0;
     margin-bottom: 115px;
-    text-align: center;
   }
 }
 
@@ -58,39 +57,37 @@
 
   @media (min-width: 1150px) {
     padding: 0 225px;
-    // text-align: center;
     margin-bottom: 79px;
   }
 }
 
 .order__form-title {
-  display: block;
+  display: inline-block;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $aqua;
   margin-bottom: 35px;
+  background-color: $white;
+  padding-right: 20px;
 
   &::after {
     content: "";
-    display: block;
-    margin-left: auto;
-    position: relative;
-    bottom: 8px;
-    width: 200px;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    width: calc(100% - 60px);
     height: 1px;
     background-color: $aqua3;
+    z-index: -1;
 
     @media (min-width: 768px) {
       display: none;
     }
   }
 
-  @media (min-width: 768px) {
-    margin: 0;
-  }
-
   @media (min-width: 1150px) {
+    padding-right: 0;
     padding-left: 60px;
   }
 }
@@ -100,7 +97,7 @@
   padding-left: 60px;
 
   @media (min-width: 768px) {
-    padding-left: 208px;
+    padding-left: 190px;
   }
 
   @media (min-width: 1150px) {
@@ -109,7 +106,6 @@
 }
 
 .order__item {
-  display: block;
   margin-bottom: 24px;
 
   @media (min-width: 768px) {
@@ -146,25 +142,19 @@ fieldset {
 
 .order__form-type {
   margin-bottom: 42px;
+  position: relative;
 
   @media (min-width: 768px) {
     display: flex;
-    margin-bottom: 68px;
+    margin-bottom: 66px;
   }
 }
 
-// .order__form-type .order__list {
-//   @media (min-width: 768px) {
-//     display: block;
-//     margin: 0 0 0 132px;
-//   }
-// }
-
 .order__radio-mark {
   position: absolute;
-  width: 42px;
-  height: 42px;
-  top: -9px;
+  width: 40px;
+  height: 40px;
+  top: -4px;
   left: -60px;
   border: 2px solid $grey;
   border-radius: 50%;
@@ -200,7 +190,6 @@ fieldset {
 }
 
 .order__radio-label {
-  display: block;
   font-size: 17px;
   line-height: 18px;
 
@@ -213,24 +202,31 @@ fieldset {
 
 
 .order__form-color {
+  position: relative;
   margin-bottom: 43px;
   padding: 0 30px;
-  width: 100%;
 
   @media (min-width: 768px) {
     background-color: $w_grey;
     margin-bottom: 50px;
-    padding: 65px 0 10px 0;
+    padding: 65px 50px 10px 50px;
+  }
+}
+
+.order__form-color .order__form-title {
+  margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    background-color: $w_grey;
   }
 }
 
 .order__form-wrapper {
   @media (min-width: 768px) {
     display: flex;
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 50px;
   }
 }
 
@@ -239,7 +235,7 @@ fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 141px;
-    padding-left: 204px;
+    padding-left: 184px;
   }
 
   @media (min-width: 1150px) {
@@ -283,7 +279,7 @@ fieldset {
   height: 16px;
 
   @media (min-width: 768px) {
-    background-image: url("../img/tick_tablet.png");
+    background-image: url("../img/tick-tablet.png");
     width: 32px;
     height: 22px;
   }
@@ -308,6 +304,7 @@ fieldset {
 // ФИО
 
 .order__form-name {
+  position: relative;
   margin-bottom: 35px;
 
   @media (min-width: 768px) {
@@ -335,7 +332,7 @@ fieldset {
   padding: 0;
 
   @media (min-width: 768px) {
-    padding-left: 125px;
+    padding-left: 105px;
     width: 100%;
   }
 
@@ -366,38 +363,26 @@ fieldset {
   }
 }
 
-// ТЕЛЕФОН
+// ТЕЛЕФОН И E-MAIL
 
-.order__form-tel {
+.order__form-contacts {
   position: relative;
-  margin-bottom: 35px;
   padding: 0 30px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 37px;
-    width: 25px;
-    height: 24px;
-    background-image: url("../img/phone.png");
-
-    @media (min-width: 768px) {
-      top: 62px;
-      right: 76px;
-    }
-
-    @media (min-width: 1150px) {
-      top: 62px;
-      right: 236px;
-    }
+  @media (min-width: 768px) {
+    background-color: $w_grey;
+    margin-bottom: 51px;
+    padding: 50px 50px 24px 50px;
   }
 
+  @media (min-width: 1150px) {
+    padding: 50px;
+  }
+}
+
+.order__form-contacts .order__form-wrapper {
   @media (min-width: 768px) {
-    display: flex;
-    background-color: $w_grey;
-    padding: 50px 0 12px 0;
-    margin: 0 auto;
+    display: block;
   }
 
   @media (min-width: 1150px) {
@@ -405,6 +390,69 @@ fieldset {
   }
 }
 
+.order__form-inner-tel {
+  position: relative;
+  margin-bottom: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    width: 25px;
+    height: 24px;
+    background-image: url("../img/phone.png");
+
+    @media (min-width: 768px) {
+      top: 10px;
+      right: 26px;
+    }
+
+    @media (min-width: 1150px) {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-bottom: 24px;
+  }
+}
+
+.order__form-inner-email {
+  position: relative;
+  margin-bottom: 36px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 3px;
+    width: 32px;
+    height: 21px;
+    background-image: url("../img/email.png");
+
+    @media (min-width: 768px) {
+      top: 17px;
+      right: 20px;
+    }
+
+    @media (min-width: 1150px) {
+      top: 15px;
+      right: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-bottom: 0;
+  }
+}
 
 .order__tel-input {
   border: 0;
@@ -413,6 +461,7 @@ fieldset {
   width: 100%;
 
   @media (min-width: 768px) {
+    display: block;
     background-color: $w_grey;
     font-size: 19px;
     width: calc(100% - 167px);
@@ -420,55 +469,21 @@ fieldset {
     padding: 11px 0 13px 16px;
   }
 
-  @media (min-width: 768px) {
-    margin-left: 85px;
+  @media (min-width: 1150px) {
+    width: calc(100% - 175px);
   }
 }
 
-.order__form-tel .order__form-title {
+.order__form-contacts .order__form-title {
   margin-bottom: 0;
+
+  &::after {
+    width: calc(100% - 30px);
+  }
 
   @media (min-width: 768px) {
     padding-top: 18px;
-  }
-}
-
-// EMAIL
-
-.order__form-email {
-  position: relative;
-  margin-bottom: 35px;
-  padding: 0 30px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 35px;
-    right: 35px;
-    width: 32px;
-    height: 21px;
-    background-image: url("../img/email.png");
-
-    @media (min-width: 768px) {
-      top: 28px;
-      right: 72px;
-    }
-
-    @media (min-width: 1150px) {
-      top: 28px;
-      right: 228px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    display: flex;
     background-color: $w_grey;
-    padding: 12px 0 50px 0;
-    margin: 0 auto 50px;
-  }
-
-  @media (min-width: 1150px) {
-    padding-right: 175px;
   }
 }
 
@@ -479,6 +494,7 @@ fieldset {
   width: 100%;
 
   @media (min-width: 768px) {
+    display: block;
     background-color: $w_grey;
     width: calc(100% - 167px);
     margin-left: auto;
@@ -486,57 +502,51 @@ fieldset {
     padding: 11px 0 13px 16px;
   }
 
-  @media (min-width: 768px) {
-    padding-left: 26px;
+  @media (min-width: 1150px) {
+    width: calc(100% - 175px);
   }
 }
 
 .order__form-email .order__form-title {
   margin-bottom: 4px;
-
-  @media (min-width: 768px) {
-    padding-top: 18px;
-  }
 }
 
 // TEXTAREA
 
 .order__form-area {
-  margin-bottom: 14px;
+  position: relative;
+  margin-bottom: 18px;
 
   @media (min-width: 768px) {
     display: flex;
     margin-bottom: 53px;
   }
 
-  @media (min-width: 768px) {
-    padding-right: 225px;
+  @media (min-width: 1150px) {
     margin-bottom: 50px;
   }
 }
 
-
 .order__textarea {
+  display: block;
   border: 2px solid $grey;
   padding: 17px 7px 13px 17px;
+  width: 100%;
 
   @media (min-width: 768px) {
-    margin-left: 128px;
-    width: calc(100% - 168px);
+    padding: 15px;
     font-size: 19px;
+    margin-left: 108px;
   }
 
-  @media (min-width: 768px) {
-    margin-left: 75px;
+  @media (min-width: 1150px) {
+    margin-left: 76px;
+    max-width: 700px;
   }
 }
 
 .order__form-area .order__form-title {
   margin-bottom: 21px;
-
-  @media (min-width: 768px) {
-    margin-bottom: 0;
-  }
 
   @media (min-width: 768px) {
     padding-top: 20px;
@@ -555,22 +565,22 @@ fieldset {
   color: $grey;
 
   @media (min-width: 768px) {
-    position: absolute;
-    top: 12px;
-    left: 416px;
+    margin: 0;
+    order: 2;
     font-size: 17px;
     line-height: 30px;
-  }
-
-  @media (min-width: 1150px) {
-    top: 10px;
-    left: 54%;
   }
 }
 
 .order__wrapper {
-  position: relative;
-  margin-bottom: -5px;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+  }
 }
 
 // КНОПКА
@@ -583,15 +593,11 @@ fieldset {
   width: 100%;
   background-color: $white;
   border: 2px solid $grey;
-  padding: 14px 0;
+  padding: 16px 0;
 
   @media (min-width: 768px) {
     width: 230px;
     height: 52px;
     font-size: 17px;
-  }
-
-  @media (min-width: 1150px) {
-    margin-left: 175px;
   }
 }

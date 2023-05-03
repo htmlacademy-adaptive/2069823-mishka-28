@@ -21,6 +21,7 @@
 }
 
 .manufacture__title {
+  position: relative;
   font-size: 17px;
   line-height: 24px;
   padding: 22px 0 27px 91px;
@@ -30,19 +31,24 @@
     width: 32px;
     height: 22px;
     position: absolute;
-    top: 35px;
-    left: 64px;
+    top: 36px;
+    left: 33px;
     background-image: url("../img/videocamera.png");
 
+    @media (min-width: 358px) {
+      top: 20px;
+      left: 40px;
+    }
+
     @media (min-width: 768px) {
-      top: 493px;
-      left: 92px;
+      top: -3px;
+      left: 41px;
       z-index: 2;
     }
 
     @media (min-width: 1150px) {
       top: 46px;
-      left: 812px;
+      left: 0;
     }
   }
 
@@ -135,5 +141,6 @@
     margin-bottom: 60px;
     padding: 13px 0;
     width: 80%;
+    margin-right: 60px;
   }
 }

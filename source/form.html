@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -13,7 +17,14 @@
     <header class="page__header header container">
       <div class="header__wrapper">
         <a class="header__logo logo" href="index.html">
-          <img class="logo__image" src="../img/logo.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
+          <picture class="logo__image">
+            <source media="(min-width: 1150px)"
+              srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)"
+              srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg"
+              srcset="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
+          </picture>
         </a>
         <button class="header__toggle">
           <span class="visually-hidden">Открыть меню.</span>
@@ -160,26 +171,25 @@
             </ul>
           </fieldset>
 
-          <fieldset class="order__form-tel">
+          <fieldset class="order__form-contacts">
             <div class="order__form-wrapper">
-              <span class="order__form-title">Тел</span>
-              <span class="visually-hidden">Укажите номер телефона.</span>
-              <label class="order__tel-label" for="order-tel"></label>
-              <input class="order__tel-input" type="tel" name="user-tel" id="order-tel" placeholder="+7 XXX XXX XX XX*">
-            </div>
-          </fieldset>
-
-          <fieldset class="order__form-email">
-            <div class="order__form-wrapper">
-              <span class="order__form-title">E-MAIL</span>
-              <span class="visually-hidden">Укажите адрес электронной почты.</span>
-              <label class="order__email-label" for="order-email"></label>
-              <input class="order__email-input" type="email" name="user-email" id="order-email" placeholder="Ваш Email*">
+              <div class="order__form-inner-tel">
+                <span class="order__form-title">Тел</span>
+                <span class="visually-hidden">Укажите номер телефона.</span>
+                <label class="order__tel-label" for="order-tel"></label>
+                <input class="order__tel-input" type="tel" name="user-tel" id="order-tel" placeholder="+7 XXX XXX XX XX*">
+              </div>
+              <div class="order__form-inner-email">
+                <span class="order__form-title">e-mail</span>
+                <span class="visually-hidden">Укажите адрес электронной почты.</span>
+                <label class="order__email-label" for="order-email"></label>
+                <input class="order__email-input" type="email" name="user-email" id="order-email" placeholder="Ваш Email*">
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="order__form-area container">
-            <span class="order__form-title">ДОП</span>
+            <span class="order__form-title">Доп</span>
             <span class="visually-hidden">Заполните пожелания к заказу.</span>
             <textarea class="order__textarea" name="user-text" cols="25" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
@@ -196,7 +206,7 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <a class="footer__logo logo" href="#">
-          <img class="logo__image" src="../img/logo.svg" width="86" height="35" alt="Логотип интернет магазина Мишка">
+          <img class="footer__logo-image" src="../img/logo-footer.svg" width="102" height="34" alt="Логотип интернет магазина Мишка">
         </a>
         <ul class="footer__list">
           <li class="footer__item">
