@@ -24,6 +24,14 @@
   z-index: 2;
 }
 
+.header-nav__no-js {
+  display: block;
+  position: relative;
+  width: 320px;
+  left: -30px;
+  z-index: 2;
+}
+
 .header-nav__main-list,
 .header-nav__user-list,
 .header-nav__new-list {
