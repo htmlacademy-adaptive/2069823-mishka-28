@@ -272,14 +272,14 @@ fieldset {
 .order__checkbox-input[type="checkbox"]:checked + .order__checkbox-mark::before {
   content: "";
   position: absolute;
-  background-image: url("../img/tick.png");
+  background-image: url("../img/tick.svg");
   top: 25%;
   left: 20%;
   width: 23px;
   height: 16px;
 
   @media (min-width: 768px) {
-    background-image: url("../img/tick-tablet.png");
+    background-image: url("../img/tick-tablet.svg");
     width: 32px;
     height: 22px;
   }
@@ -401,7 +401,7 @@ fieldset {
     right: 7px;
     width: 25px;
     height: 24px;
-    background-image: url("../img/phone.png");
+    background-image: url("../img/phone.svg");
 
     @media (min-width: 768px) {
       top: 10px;
@@ -431,7 +431,7 @@ fieldset {
     right: 3px;
     width: 32px;
     height: 21px;
-    background-image: url("../img/email.png");
+    background-image: url("../img/email.svg");
 
     @media (min-width: 768px) {
       top: 17px;
