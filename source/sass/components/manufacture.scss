@@ -33,7 +33,7 @@
     position: absolute;
     top: 36px;
     left: 33px;
-    background-image: url("../img/videocamera.svg");
+    background-image: url("../img/stack.svg#videocamera");
 
     @media (min-width: 358px) {
       top: 20px;
@@ -87,7 +87,7 @@
 }
 
 .manufacture__play {
-  background-image: url("../../img/play.svg");
+  background-image: url("../../img/stack.svg#play");
   width: 100px;
   height: 77px;
   border: none;

@@ -143,6 +143,7 @@
   margin-bottom: 38px;
 
   @media (min-width: 768px) {
+    width: 137px;
     position: absolute;
     bottom: 97px;
     right: 70px;
@@ -158,35 +159,33 @@
 .reviews__prev {
   width: 50%;
   height: 52px;
-  background-image: url("../img/arrow.svg");
-  background-position: 50% 50%;
+  background-image: url("../img/stack.svg#arrow");
+  background-position: 37px 11px;
   background-color: $white;
   background-repeat: no-repeat;
   border: 1px solid $b_grey;
 
   @media (min-width: 768px) {
+    background-position: 0 13px;
     border: none;
-    width: 50px;
-    height: 50px;
-    margin-left: calc(100% - 137px);
+    width: 75px;
   }
 }
 
 .reviews__next {
   width: 50%;
   height: 52px;
-  background-image: url("../img/arrow.svg");
-  background-position: 50% 50%;
+  background-image: url("../img/stack.svg#arrow");
+  background-position: 41px 13px;
   rotate: 180deg;
   background-color: $white;
   background-repeat: no-repeat;
   border: 1px solid $b_grey;
 
   @media (min-width: 768px) {
+    background-position: 0 13px;
     border: none;
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
+    width: 75px;
   }
 }
 
