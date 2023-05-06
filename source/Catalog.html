@@ -82,7 +82,7 @@
         <div class="container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a class="catalog__card-link" href="#">
+              <a class="catalog__card-link" href="rabbit.html">
                 <picture class="catalog__card-image">
                   <source media="(min-width: 1150px)"
                     srcset="img/rabbit-desktop.webp 1x, img/rabbit-desktop@2x.webp 2x">
@@ -94,19 +94,19 @@
               </a>
               <div class="catalog__item-wrapper">
                 <div class="catalog__inner">
-                  <a class="catalog__card-link-text" href="#" >
+                  <a class="catalog__card-link-text" href="rabbit.html" >
                     <h3 class="catalog__card-title">Зайчик-попрыгайчик</h3>
                   </a>
                   <span class="catalog__card-description">Рост 30 см, вес 200 г</span>
                 </div>
                 <div class="catalog__card-content">
                   <span class="catalog__card-price">1 200 руб.</span>
-                  <button class="catalog__card-basket" type="button"></button>
+                  <a class="catalog__card-basket" href="order.html"></a>
                 </div>
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__card-link" href="#">
+              <a class="catalog__card-link" href="pottle.html">
                 <picture class="catalog__card-image">
                   <source media="(min-width: 1150px)"
                     srcset="img/pottle-desktop.jpg 1x, img/pottle-desktop@2x.jpg 2x">
@@ -118,19 +118,19 @@
               </a>
               <div class="catalog__item-wrapper">
                 <div class="catalog__inner">
-                  <a class="catalog__card-link-text" href="#" >
+                  <a class="catalog__card-link-text" href="pottle.html" >
                     <h3 class="catalog__card-title">Корзинка для белья</h3>
                   </a>
                   <span class="catalog__card-description">Диаметр 15 см, высота 10 см</span>
                 </div>
                 <div class="catalog__card-content">
                   <span class="catalog__card-price">690 руб.</span>
-                  <button class="catalog__card-basket" type="button"></button>
+                  <a class="catalog__card-basket" href="order.html"></a>
                 </div>
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__card-link" href="#">
+              <a class="catalog__card-link" href="big-pottle.html">
                 <picture class="catalog__card-image">
                   <source media="(min-width: 1150px)"
                     srcset="img/big-pottle-desktop.jpg 1x, img/big-pottle-desktop@2x.jpg 2x">
@@ -142,14 +142,14 @@
               </a>
               <div class="catalog__item-wrapper">
                 <div class="catalog__inner">
-                  <a class="catalog__card-link-text" href="#" >
+                  <a class="catalog__card-link-text" href="big-pottle.html" >
                     <h3 class="catalog__card-title">Большая корзинка для&nbsp;игрушек</h3>
                   </a>
                   <span class="catalog__card-description">Диаметр 30 см, высота 30 см</span>
                 </div>
                 <div class="catalog__card-content">
                   <span class="catalog__card-price">1500 руб.</span>
-                  <button class="catalog__card-basket" type="button"></button>
+                  <a class="catalog__card-basket" href="order.html"></a>
                 </div>
               </div>
             </li>
@@ -174,7 +174,7 @@
             <button class="manufacture__play"></button>
           </div>
           <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="button manufacture__button" type="button">Сделать заказ</button>
+          <a class="button manufacture__button" href="order.html">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -220,22 +220,22 @@
 
     <!--MODAL-BASKET-->
 
-    <div class="modal-basket">
+    <div class="modal-basket modal-basket__close">
       <div class="modal-basket__wrapper">
         <h2 class="modal-basket__title">Добавить в корзину</h2>
         <span class="modal-basket__subtitle"> Выберите размер:</span>
         <ul class="modal-basket__list">
           <li class="modal-basket__item">
-            <button class="modal__button-size" type="button">S</button>
+            <button class="modal-basket__button-size" type="button">S</button>
           </li>
           <li class="modal-basket__item">
-            <button class="modal__button-size" type="button">M</button>
+            <button class="modal-basket__button-size" type="button">M</button>
           </li>
           <li class="modal-basket__item">
-            <button class="modal__button-size" type="button">L</button>
+            <button class="modal-basket__button-size" type="button">L</button>
           </li>
         </ul>
-        <button class="modal__button button" type="button">Добавить</button>
+        <button class="modal-basket__button" type="button">Добавить</button>
       </div>
     </div>
     <script src="/js/script.js"></script>

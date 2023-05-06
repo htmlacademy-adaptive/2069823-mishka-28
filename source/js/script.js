@@ -14,32 +14,34 @@ navToggle.addEventListener('click', function () {
 });
 
 
-// let page = document.querySelector('.modal-basket');
-// let modalButton = document.querySelector('.product__button');
+let popup = document.querySelector('.modal-basket');
+let openPopupButtons = document.querySelectorAll('.product__button');
+let openBasketButtons = document.querySelectorAll('.catalog__card-basket');
+let openCatalogButtons =document.querySelectorAll('.manufacture__button');
 
-// modalButton.onclick = function() {
-//   page.classList.toggle('modal-basket__close');
-// };
+openPopupButtons.forEach((a) => {
+  a.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.remove('modal-basket__close');
+  })
+});
 
+openCatalogButtons.forEach((a) => {
+  a.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.remove('modal-basket__close');
+  })
+});
 
-let btnModal = document.querySelector(".product__button");
-let modal= document.querySelector(".modal-basket");
-let toggleMenu = function () {
-    menu.classList.toggle("modal-basket__close");
-}
+openBasketButtons.forEach((a) => {
+  a.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.remove('modal-basket__close');
+  })
+});
 
-// btnModal.addEventListener("click", function (e) {
-//     e.stopPropagation();
-//     toggleMenu();
-// });
-
-// document.addEventListener("click", function (e) {
-//     let target = e.target;
-//     let its_menu = target == modal || modal.contains(target);
-//     let its_btnMenu = target == btnModal;
-//     let menu_is_active = modal.classList.contains("modal-basket__close");
-
-//     if (!its_menu && !its_btnMenu && menu_is_active) {
-//         toggleMenu();
-//     }
-// });
+document.addEventListener('click', (e) => {
+  if(e.target === popup) {
+      popup.classList.add('modal-basket__close');
+  }
+});

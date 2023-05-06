@@ -108,7 +108,10 @@
 }
 
 .contacts__button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin: 0 auto;
   width: calc(100% - 60px);
   height: 52px;

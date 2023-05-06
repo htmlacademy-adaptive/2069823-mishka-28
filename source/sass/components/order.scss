@@ -130,9 +130,11 @@
   line-height: 18px;
 }
 
-// Потом заменить
-
-fieldset {
+.order__form-type,
+.order__form-color,
+.order__form-name,
+.order__form-contacts,
+.order__form-area {
   font-size: 17px;
   line-height: 18px;
   border: 0;

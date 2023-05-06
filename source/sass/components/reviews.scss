@@ -190,6 +190,10 @@
 }
 
 .reviews__write {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 100%;
   height: 52px;
   background-color: $white;

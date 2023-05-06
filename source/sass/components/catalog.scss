@@ -156,6 +156,10 @@
 }
 
 .catalog__card-basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background-image: url("../img/stack.svg#basket");
   border: 0;
   background-color: $white;
