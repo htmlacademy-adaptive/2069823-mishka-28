@@ -101,7 +101,11 @@
                 </div>
                 <div class="catalog__card-content">
                   <span class="catalog__card-price">1 200 руб.</span>
-                  <a class="catalog__card-basket" href="order.html"></a>
+                  <a class="catalog__card-basket" href="order.html">
+                    <svg class="catalog__link-icon" width="21" height="18">
+                      <use href="../img/stack.svg#basket"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </li>
@@ -125,7 +129,11 @@
                 </div>
                 <div class="catalog__card-content">
                   <span class="catalog__card-price">690 руб.</span>
-                  <a class="catalog__card-basket" href="order.html"></a>
+                  <a class="catalog__card-basket" href="order.html">
+                    <svg class="catalog__link-icon" width="21" height="18">
+                      <use href="../img/stack.svg#basket"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </li>
@@ -149,7 +157,11 @@
                 </div>
                 <div class="catalog__card-content">
                   <span class="catalog__card-price">1500 руб.</span>
-                  <a class="catalog__card-basket" href="order.html"></a>
+                  <a class="catalog__card-basket" href="order.html">
+                    <svg class="catalog__link-icon" width="21" height="18">
+                      <use href="../img/stack.svg#basket"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </li>
@@ -184,7 +196,9 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <a class="footer__logo logo" href="#">
-          <img class="footer__logo-image" src="../img/logo-footer.svg" width="102" height="34" alt="Логотип интернет магазина Мишка">
+          <svg class="footer__logo-image" width="102" height="34">
+            <use href="../img/stack.svg#logo-footer"></use>
+          </svg>
         </a>
         <ul class="footer__list">
           <li class="footer__item">
@@ -224,18 +238,29 @@
       <div class="modal-basket__wrapper">
         <h2 class="modal-basket__title">Добавить в корзину</h2>
         <span class="modal-basket__subtitle"> Выберите размер:</span>
-        <ul class="modal-basket__list">
-          <li class="modal-basket__item">
-            <button class="modal-basket__button-size" type="button">S</button>
-          </li>
-          <li class="modal-basket__item">
-            <button class="modal-basket__button-size" type="button">M</button>
-          </li>
-          <li class="modal-basket__item">
-            <button class="modal-basket__button-size" type="button">L</button>
-          </li>
-        </ul>
-        <button class="modal-basket__button" type="button">Добавить</button>
+        <form class="order__form" action="https://echo.htmlacademy.ru/" method="get">
+          <ul class="modal-basket__list">
+            <li class="modal-basket__item">
+              <label class="modal__label">
+                <input class="modal__radio-input visually-hidden" type="radio" name="product-size" value="s" checked>
+                <span class="modal-basket__button-size">s</span>
+              </label>
+            </li>
+            <li class="modal-basket__item">
+              <label class="modal__label">
+                <input class="modal__radio-input visually-hidden" type="radio" name="product-size" value="m">
+                <span class="modal-basket__button-size">m</span>
+              </label>
+            </li>
+            <li class="modal-basket__item">
+              <label class="modal__label">
+                <input class="modal__radio-input visually-hidden" type="radio" name="product-size" value="l">
+                <span class="modal-basket__button-size">l</span>
+              </label>
+            </li>
+          </ul>
+          <button class="modal-basket__button" type="submit">Добавить</button>
+        </form>
       </div>
     </div>
     <script src="/js/script.js"></script>

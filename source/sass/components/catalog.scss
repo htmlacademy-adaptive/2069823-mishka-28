@@ -88,6 +88,14 @@
   padding: 27px 28px;
   border: 1px solid $b_grey;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -115,6 +123,14 @@
   font-size: 17px;
   line-height: 24px;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -160,9 +176,19 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-image: url("../img/stack.svg#basket");
   border: 0;
   background-color: $white;
   width: 20px;
   height: 19px;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: $aqua;
+  }
+
+  &:active {
+    fill: $aqua;
+    opacity: 0.3;
+  }
 }

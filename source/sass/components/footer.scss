@@ -15,6 +15,15 @@
 .footer__logo-image {
   display: none;
 
+  &:hover {
+    fill: $footer_logo;
+  }
+
+  &:active {
+    fill: $footer_logo;
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     display: flex;
   }
@@ -61,5 +70,29 @@
 .footer__copyright-text {
   @media (min-width: 768px) {
     margin-right: 26px;
+  }
+}
+
+.footer__copyright-img {
+  fill: $aqua3;
+
+  &:hover {
+    fill: $footer_logo;
+  }
+
+  &:active {
+    fill: $footer_logo;
+    opacity: 0.3;
+  }
+}
+
+.footer__img {
+  &:hover {
+    fill: $footer_logo;
+  }
+
+  &:active {
+    fill: $footer_logo;
+    opacity: 0.3;
   }
 }

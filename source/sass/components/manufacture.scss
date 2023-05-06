@@ -8,6 +8,14 @@
 .manufacture__wrapper {
   border: 1px solid $b_grey;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -95,6 +103,15 @@
   position: absolute;
   top: calc(50% - 38px);
   left: calc(50% - 50px);
+
+  &:hover {
+    transform: scale(120%);
+  }
+
+  &:active {
+    transform: scale(80%);
+    opacity: 0.6;
+  }
 }
 
 .manufacture__text {
@@ -132,6 +149,15 @@
   color: $grey;
   width: 75%;
   background-color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 
   @media (min-width: 768px) {
     margin-bottom: 42px;

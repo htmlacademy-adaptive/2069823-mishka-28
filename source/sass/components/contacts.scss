@@ -67,6 +67,16 @@
   text-decoration: none;
   border-bottom: 1px solid $aqua3;
 
+  &:hover {
+    color: $aqua;
+  }
+
+  &:active {
+    color: $aqua;
+    border-bottom: 1px solid rgba($aqua, 0.3);
+  }
+
+
   @media (min-width: 768px) {
     padding-bottom: 4px;
   }
@@ -117,6 +127,15 @@
   height: 52px;
   border: 2px solid $grey;
   background-color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 
   @media (min-width: 768px) {
     width: 230px;

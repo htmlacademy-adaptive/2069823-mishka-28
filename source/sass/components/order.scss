@@ -162,6 +162,14 @@
   border-radius: 50%;
   border-color: $grey;
 
+  &:hover {
+    border-color: $aqua;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     width: 52px;
     height: 52px;
@@ -263,6 +271,14 @@
   border-color: $grey;
   margin-top: -5px;
 
+  &:hover {
+    border-color: $aqua;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     width: 52px;
     height: 52px;
@@ -358,6 +374,15 @@
   border-bottom: 2px solid $grey;
   padding: 15px 0;
   width: 100%;
+
+  &:hover {
+    border-bottom: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
 
   @media (min-width: 768px) {
     padding: 12px 18px;
@@ -462,6 +487,16 @@
   padding: 17px 0;
   width: 100%;
 
+  &:hover {
+    border-bottom: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
+
+
   @media (min-width: 768px) {
     display: block;
     background-color: $w_grey;
@@ -494,6 +529,15 @@
   border-bottom: 2px solid $grey;
   padding: 16px 0;
   width: 100%;
+
+  &:hover {
+    border-bottom: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
 
   @media (min-width: 768px) {
     display: block;
@@ -534,6 +578,15 @@
   border: 2px solid $grey;
   padding: 17px 7px 13px 17px;
   width: 100%;
+
+  &:hover {
+    border: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
 
   @media (min-width: 768px) {
     padding: 15px;
@@ -596,6 +649,15 @@
   background-color: $white;
   border: 2px solid $grey;
   padding: 16px 0;
+
+  &:hover {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 
   @media (min-width: 768px) {
     width: 230px;

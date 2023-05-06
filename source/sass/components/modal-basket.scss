@@ -22,7 +22,6 @@
   @media (min-width: 768px) {
     padding: 38px 105px 46px;
   }
-
 }
 
 .modal-basket__title {
@@ -38,7 +37,6 @@
     line-height: 57px;
     padding: 0;
   }
-
 }
 
 .modal-basket__subtitle {
@@ -61,19 +59,31 @@
   margin-bottom: 31px;
 }
 
+.modal__label {
+  position: relative;
+}
+
 .modal-basket__button-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  top: 0;
+  left: 0;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $grey;
-  width: 82px;
-  height: 52px;
-  background-color: $white;
-  border: 2px solid $grey;
+  border: 2px solid rgba($grey, 0.1);
 
   @media (min-width: 768px) {
     width: 112px;
   }
+}
+
+.modal__radio-input[type="radio"]:checked + .modal-basket__button-size {
+  border: 2px solid $aqua;
 }
 
 .modal-basket__button {
@@ -83,6 +93,15 @@
   width: 100%;
   padding: 15px 0;
   border: none;
+
+  &:hover {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 }
 
 .modal-basket__item {
