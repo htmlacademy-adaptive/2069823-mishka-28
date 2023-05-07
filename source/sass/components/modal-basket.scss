@@ -94,7 +94,8 @@
   padding: 15px 0;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
     background-color: $grey;
   }

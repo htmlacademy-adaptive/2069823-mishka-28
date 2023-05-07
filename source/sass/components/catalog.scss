@@ -18,7 +18,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 205px;
+      top: 215px;
       right: 0;
       width: 100%;
       height: 24px;
@@ -45,7 +45,9 @@
   list-style: none;
 
   @media (min-width: 1150px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
   }
 }
 
@@ -88,7 +90,8 @@
   padding: 27px 28px;
   border: 1px solid $b_grey;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba($black, 0.1);
   }
 
@@ -124,7 +127,8 @@
   line-height: 24px;
   color: $black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -182,7 +186,8 @@
   height: 19px;
   opacity: 0.2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 1;
     fill: $aqua;
   }

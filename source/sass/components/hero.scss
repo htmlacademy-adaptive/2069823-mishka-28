@@ -64,7 +64,7 @@
   line-height: 30px;
 
   @media (min-width: 768px) {
-    padding: 155px 0 372px;
+    padding: 156px 0 372px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -80,7 +80,8 @@
   position: relative;
 
   @media (min-width: 768px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
   }
 }
@@ -91,15 +92,18 @@
   width: 100%;
   padding: 24px 35px 18px 30px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-5px) scaleY(1.1);
   }
 
-  &:hover .hero__button--interior {
+  &:hover .hero__button--interior,
+  &:focus .hero__button--interior {
     opacity: 0.7;
   }
 
-  &:hover .hero__button--toys {
+  &:hover .hero__button--toys,
+  &:focus .hero__button--toys {
     opacity: 0.7;
   }
 
@@ -121,7 +125,7 @@
   padding: 24px 26px 18px 30px;
 
   @media (min-width: 768px) {
-    padding: 26px 34px 34px 29px;
+    padding: 26px 34px 34px 36px;
   }
 }
 

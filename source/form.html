@@ -29,7 +29,7 @@
         <button class="header__toggle">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <nav class="page__header-nav header-nav header-nav__no-js">
+        <nav class="page__header-nav header-nav__main-nav header-nav__no-js header-nav__closed">
           <ul class="header-nav__main-list">
             <li class="header-nav__item-catalog">
               <a class="header-nav__link" href="catalog.html">Каталог товаров</a>
@@ -38,6 +38,8 @@
               <a class="header-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
+        </nav>
+        <nav class="page__header-nav header-nav__user-nav header-nav__no-js header-nav__closed">
           <ul class="header-nav__user-list">
             <li class="header-nav__item-search">
               <a class="header-nav__link" href="#" >
@@ -56,6 +58,8 @@
               </a>
             </li>
           </ul>
+        </nav>
+        <nav class="page__header-nav header-nav__offer-nav">
           <ul class="header-nav__new-list">
             <li class="header-nav__item-new">
               <a class="header-nav__link" href="#">Новые поступления</a>
@@ -64,10 +68,10 @@
               <a class="header-nav__link" href="#">Распродажа</a>
             </li>
           </ul>
-          <p class="header-nav__offer">
-            <a class="header-nav__link" href="#">Бесплатная доставка по России</a>
-          </p>
         </nav>
+        <p class="page__header-nav header-nav__offer">
+          <a class="header-nav__link" href="#">Бесплатная доставка по России</a>
+        </p>
       </div>
     </header>
 
@@ -88,14 +92,14 @@
             <ul class="order__list">
               <li class="order__item">
                 <label class="order__label">
-                  <input class="order__radio-input visually-hidden" type="radio" name="product-type" value="accessory" checked>
+                  <input class="order__radio-input visually-hidden" type="radio" name="accessory" value="on" checked>
                   <span class="order__radio-mark"></span>
                   <span class="order__radio-label">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="order__item">
                 <label class="order__label">
-                  <input class="order__radio-input visually-hidden" type="radio" name="product-type" value="toys">
+                  <input class="order__radio-input visually-hidden" type="radio" name="toys" value="on">
                   <span class="order__radio-mark"></span>
                   <span class="order__radio-label">Детская игрушка</span>
                 </label>
@@ -207,14 +211,14 @@
 
     <footer class="footer">
       <div class="footer__wrapper container">
-        <a class="footer__logo logo" href="#">
+        <a class="footer__logo" href="#">
           <svg class="footer__logo-image" width="102" height="34">
             <use href="../img/stack.svg#logo-footer"></use>
           </svg>
         </a>
         <ul class="footer__list">
           <li class="footer__item">
-                <a class="link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+                <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
                   <svg class="footer__img" width="28" height="23">
                     <use href="../img/stack.svg#vkontakte"></use>
                   </svg>

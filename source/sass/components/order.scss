@@ -152,6 +152,7 @@
   }
 }
 
+
 .order__radio-mark {
   position: absolute;
   width: 40px;
@@ -197,6 +198,10 @@
     width: 23px;
     height: 23px;
   }
+}
+
+.order__radio-input:focus + .order__radio-mark {
+  border-color: $aqua;
 }
 
 .order__radio-label {
@@ -303,6 +308,10 @@
   }
 }
 
+.order__checkbox-input:focus + .order__checkbox-mark {
+  border-color: $aqua;
+}
+
 .order__checkbox-label {
   display: block;
   font-size: 17px;
@@ -375,7 +384,8 @@
   padding: 15px 0;
   width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid $aqua;
   }
 
@@ -487,7 +497,8 @@
   padding: 17px 0;
   width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid $aqua;
   }
 
@@ -530,7 +541,8 @@
   padding: 16px 0;
   width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid $aqua;
   }
 
@@ -579,7 +591,8 @@
   padding: 17px 7px 13px 17px;
   width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 2px solid $aqua;
   }
 
@@ -650,7 +663,8 @@
   border: 2px solid $grey;
   padding: 16px 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
     background-color: $grey;
   }

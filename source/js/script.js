@@ -1,7 +1,9 @@
-let navMain = document.querySelector('.header-nav');
+let navMain = document.querySelector('.header-nav__main-nav');
+let navUser = document.querySelector('.header-nav__user-nav');
 let navToggle = document.querySelector('.header__toggle');
 
 navMain.classList.remove('header-nav__no-js');
+navUser.classList.remove('header-nav__no-js');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('header-nav__open')) {
@@ -11,7 +13,15 @@ navToggle.addEventListener('click', function () {
     navMain.classList.add('header-nav__open');
     navMain.classList.remove('header-nav__closed');
   }
+  if (navUser.classList.contains('header-nav__open')) {
+    navUser.classList.remove('header-nav__open');
+    navUser.classList.add('header-nav__closed');
+  } else {
+    navUser.classList.add('header-nav__open');
+    navUser.classList.remove('header-nav__closed');
+  }
 });
+
 
 
 let popup = document.querySelector('.modal-basket');

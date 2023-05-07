@@ -6,7 +6,7 @@
     background-image: url("../img/zigzag-line.jpg");
     background-repeat: repeat-x;
     position: absolute;
-    bottom: 0;
+    bottom: -41px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -14,6 +14,7 @@
     @media (min-width: 768px) {
       background-image: url("../img/zigzag-line-tablet.png");
       height: 17px;
+      bottom: 0;
     }
 
     @media (min-width: 1150px) {
@@ -48,6 +49,7 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 38px;
+    max-width: 630px;
   }
 
   @media (min-width: 1150px) {
@@ -189,7 +191,8 @@
   border: 2px solid $grey;
   background-color: $white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
     background-color: $grey;
   }
