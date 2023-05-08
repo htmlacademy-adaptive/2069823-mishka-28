@@ -1,3 +1,5 @@
+@use "../base/variables.scss" as *;
+
 .main-container {
   flex-grow: 1;
 }
@@ -8,8 +10,9 @@
 
   @media (min-width: 768px) {
     position: relative;
-    bottom: 70px;
-    margin-bottom: -18px;
+    bottom: 66px;
+    margin-bottom: -15px;
+    border-top: 1px solid rgba($black, 0.1);
   }
 
   @media (min-width: 1150px) {
