@@ -2,18 +2,18 @@
 
 .header {
   @media (min-width: 768px) {
-    display: block;
+    // display: block;
   }
 }
 
 .header__wrapper {
-  display: block;
-  justify-content: center;
-  background-color: $white;
+  // display: block;
+  // justify-content: center;
+  // background-color: $white;
 
-  @media (min-width: 1150px) {
-    display: block;
-  }
+  // @media (min-width: 1150px) {
+  //   display: block;
+  // }
 }
 
 .header__toggle {
@@ -80,10 +80,8 @@
     opacity: 0.3;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: 768px) {
     padding: 0;
-    position: relative;
-    bottom: 10px;
-    right: 14px;
+    margin-right: 26px;
   }
 }

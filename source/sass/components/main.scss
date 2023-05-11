@@ -9,15 +9,14 @@
   margin-bottom: 31px;
 
   @media (min-width: 768px) {
-    position: relative;
     bottom: 66px;
     margin-bottom: -15px;
     border-top: 1px solid rgba($black, 0.1);
   }
 
   @media (min-width: 1150px) {
-    margin-bottom: 24px;
-    bottom: 48px;
+    bottom: 68px;
+    margin-bottom: 4px;
   }
 }
 
@@ -82,13 +81,14 @@
 }
 
 .main__catalog {
-  position: relative;
-  bottom: 69px;
-  margin-bottom: 0;
+  @media (min-width: 768px) {
+    position: relative;
+    bottom: 64px;
+    margin-bottom: 0;
+  }
 
   @media (min-width: 1150px) {
-    margin-bottom: 77px;
-    bottom: 46px;
+    bottom: 65px;
   }
 }
 
@@ -97,12 +97,13 @@
   margin-bottom: 60px;
 
   @media (min-width: 768px) {
-    margin-bottom: -4px;
-    bottom: 69px;
+    margin-bottom: 0;
+    bottom: 64px;
   }
 
   @media (min-width: 1150px) {
-    margin-bottom: 34px;
+    margin-bottom: 92px;
+    bottom: 12px;
   }
 }
 
@@ -112,12 +113,11 @@
 
   @media (min-width: 768px) {
     position: relative;
-    bottom: 68px;
-    margin-bottom: -17px;
+    bottom: 64px;
+    margin-bottom: -13px;
   }
 
   @media (min-width: 1150px) {
-    bottom: 46px;
-    margin-bottom: 4px;
+    margin-bottom: -17px;
   }
 }

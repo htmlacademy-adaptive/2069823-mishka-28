@@ -21,6 +21,10 @@
 .page__header {
   position: relative;
   border-bottom: 1px solid rgba($black, 0.1);
+
+  @media (min-width: 768px) {
+    border-bottom: 0;
+  }
 }
 
 .page__main {

@@ -10,7 +10,6 @@
 .header-nav__main-nav,
 .header-nav__user-nav,
 .header-nav__offer-nav {
-  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 
@@ -25,34 +24,31 @@
 
 .header-nav__main-nav {
   display: flex;
-  order: 3;
   z-index: 2;
-  grid-column: 1/2;
-  grid-row: 2/3;
 
   @media (min-width: 1150px) {
     grid-row: 1/2;
-    margin-bottom: 20px;
   }
 }
 
 .header-nav__user-nav {
   display: flex;
-  order: 2;
-  grid-column: 2/3;
-  grid-row: 1/2;
+
+  @media (min-width: 768px) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
   @media (min-width: 1150px) {
     grid-column: 3/4;
-    grid-row: 1/2;
     max-width: 360px;
   }
 }
 
 .header-nav__offer-nav {
-  display: flex;
-
   @media (min-width: 1150px) {
+    position: relative;
+    display: flex;
     grid-column: 1/2;
     grid-row: 2/3;
     z-index: 2;
@@ -78,17 +74,9 @@
 .header-nav__user-list,
 .header-nav__new-list {
   list-style: none;
-  align-items: center;
-
-  @media (min-width: 1150px) {
-    position: relative;
-    align-items: flex-start;
-  }
 }
 
 .header-nav__main-list {
-  display: block;
-
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -97,10 +85,9 @@
 }
 
 .header-nav__user-list {
-  display: block;
-
   @media (min-width: 768px) {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     font-size: 17px;
   }
@@ -111,6 +98,7 @@
 
   @media (min-width: 1150px) {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     font-size: 15px;
   }
@@ -122,10 +110,7 @@
 
   @media (min-width: 768px) {
     display: flex;
-    order: 4;
     justify-content: end;
-    grid-column: 2/3;
-    grid-row: 2/3;
     font-size: 15px;
     z-index: 2;
     padding: 22px 0;
@@ -133,10 +118,7 @@
 
   @media (min-width: 1150px) {
     font-size: 15px;
-    order: 5;
     grid-column: 3/4;
-    grid-row: 2/3;
-    padding: 0;
   }
 }
 
@@ -165,6 +147,7 @@
 
   @media (min-width: 768px) {
     padding: 0;
+    align-items: center;
     box-shadow: none;
   }
 }
@@ -185,7 +168,7 @@
       content: "";
       display: flex;
       width: 1px;
-      height: 88px;
+      height: 89px;
       background-color: $black;
       opacity: 0.1;
     }
@@ -200,7 +183,7 @@
       content: "";
       display: flex;
       width: 1px;
-      height: 88px;
+      height: 89px;
       background-color: $black;
       opacity: 0.1;
     }
@@ -213,17 +196,19 @@
   }
 }
 
-.header-nav__link-text {
-  display: flex;
-  align-items: center;
-}
-
 .header-nav__link-icon {
+  display: flex;
   margin-right: 25px;
   opacity: 0.2;
 
   @media (min-width: 768px) {
-    margin: 35px 32px;
+    margin: 0;
+    box-sizing: content-box;
+    padding: 30px 31px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 31px 32px;
   }
 }
 

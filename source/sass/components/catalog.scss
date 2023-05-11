@@ -3,7 +3,7 @@
 .catalog__title {
   display: flex;
   justify-content: center;
-  padding: 72px 0;
+  padding: 73px 0 72px;
   margin-bottom: 32px;
   font-size: 27px;
   line-height: 30px;
@@ -98,8 +98,6 @@
   display: block;
   padding: 27px 28px;
   border: 1px solid $b_grey;
-
-
 
   @media (min-width: 768px) {
     display: flex;
