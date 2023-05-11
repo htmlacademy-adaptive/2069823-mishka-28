@@ -29,6 +29,7 @@
       min-height: 24px;
       position: absolute;
       bottom: -10px;
+      z-index: 2;
 
       @media (min-width: 1150px) {
         background-image: url("../img/zigzag-line-desktop.png");
@@ -86,46 +87,35 @@
   }
 }
 
+.hero__list::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, $aqua 50%, $aqua2 50%);
+  position: absolute;
+  z-index: 1;
+}
+
 .hero__item {
+  position: relative;
   background-color: $aqua;
   list-style: none;
   width: 100%;
-  padding: 24px 35px 18px 30px;
+  z-index: 2;
 
   &:hover,
   &:focus {
-    transform: translateY(-5px) scaleY(1.1);
+    transform: translateY(-5px);
   }
 
-  &:hover .hero__button--interior,
-  &:focus .hero__button--interior {
+  &:hover .hero__button,
+  &:focus .hero__button {
     opacity: 0.7;
   }
 
-  &:hover .hero__button--toys,
-  &:focus .hero__button--toys {
-    opacity: 0.7;
-  }
-
-  &:active .hero__button--interior {
+  &:active .hero__button {
     opacity: 0.3;
-  }
-
-  &:active .hero__button--toys {
-    opacity: 0.3;
-  }
-
-  @media (min-width: 768px) {
-    padding: 26px 40px 25px 36px;
-  }
-}
-
-.hero__item:last-child {
-  background-color: $aqua2;
-  padding: 24px 26px 18px 30px;
-
-  @media (min-width: 768px) {
-    padding: 26px 34px 34px 36px;
   }
 }
 
@@ -145,6 +135,20 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+  padding: 24px 35px 18px 30px;
+
+  @media (min-width: 768px) {
+    padding: 26px 40px 25px 36px;
+  }
+}
+
+.hero__item:last-child .hero__button {
+  padding: 24px 26px 18px 30px;
+  background-color: $aqua2;
+
+  @media (min-width: 768px) {
+    padding: 26px 34px 34px 36px;
+  }
 }
 
 .hero__button-title {
