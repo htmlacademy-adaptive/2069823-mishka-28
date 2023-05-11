@@ -93,6 +93,8 @@
 }
 
 .footer__link {
+  display: flex;
+
   &:hover,
   &:focus {
     fill: $footer_logo;

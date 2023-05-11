@@ -54,6 +54,15 @@
 .catalog__item {
   margin-bottom: 30px;
 
+  &:hover .catalog__item-wrapper,
+  &:focus .catalog__item-wrapper {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active .catalog__item-wrapper {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
+
   @media (min-width: 768px) {
     display: flex;
     margin-bottom: 54px;
@@ -90,14 +99,7 @@
   padding: 27px 28px;
   border: 1px solid $b_grey;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px rgba($black, 0.1);
-  }
 
-  &:active {
-    box-shadow: 0 3px 5px rgba($black, 0.1);
-  }
 
   @media (min-width: 768px) {
     display: flex;
