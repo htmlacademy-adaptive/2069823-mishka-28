@@ -84,16 +84,18 @@
   border: none;
   border-radius: 25%;
   position: absolute;
-  top: calc(50% - 38px);
-  left: calc(50% - 50px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    transform: scale(120%);
+    transform: translate(-50%, -50%) scale(120%);
   }
 
   &:active {
-    transform: scale(80%);
+    transform: translate(-50%, -50%) scale(80%);
     opacity: 0.6;
   }
 }
