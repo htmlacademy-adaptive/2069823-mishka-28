@@ -9,9 +9,9 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import {deleteAsync}  from 'del';
-import htmlmin from 'gulp-htmlmin'
+import htmlmin from 'gulp-htmlmin';
+import { stacksvg } from "gulp-stacksvg"
 
 // Styles
 
@@ -41,6 +41,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename('scripts.min.js'))
     .pipe(gulp.dest('build/js'))
 }
 
@@ -69,7 +70,20 @@ const createWebp = () => {
 
 //Svg
 
-//Stack
+const svg = () => {
+  return gulp.src('source/img/logo/*.svg')
+  .pipe(svgo())
+	.pipe(gulp.dest(`build/img/logo`))
+}
+
+//Stacksvg
+
+const stackSvg = () => {
+  return gulp.src('source/img/*.svg')
+  .pipe(stacksvg({ output: `stack` }))
+	.pipe(gulp.dest(`build/img`))
+}
+
 
 //Copy
 
@@ -130,13 +144,13 @@ export const build = gulp.series (
     styles,
     html,
     scripts,
-    // svg,
-    // stack,
+    svg,
+    stackSvg,
     createWebp,
   ),
 );
 
-
+//Default
 
 export default gulp.series(
   clean,
@@ -146,8 +160,8 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    // svg,
-    // stack,
+    svg,
+    stackSvg,
     createWebp,
   ),
   gulp.series(
