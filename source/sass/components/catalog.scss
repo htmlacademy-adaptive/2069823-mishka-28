@@ -3,7 +3,7 @@
 .catalog__title {
   display: flex;
   justify-content: center;
-  padding: 72px 0;
+  padding: 73px 0 72px;
   margin-bottom: 32px;
   font-size: 27px;
   line-height: 30px;
@@ -18,7 +18,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 205px;
+      top: 215px;
       right: 0;
       width: 100%;
       height: 24px;
@@ -45,12 +45,23 @@
   list-style: none;
 
   @media (min-width: 1150px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
   }
 }
 
 .catalog__item {
   margin-bottom: 30px;
+
+  &:hover .catalog__item-wrapper,
+  &:focus .catalog__item-wrapper {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active .catalog__item-wrapper {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 
   @media (min-width: 768px) {
     display: flex;
@@ -116,6 +127,15 @@
   line-height: 24px;
   color: $black;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     font-size: 20px;
   }
@@ -156,9 +176,24 @@
 }
 
 .catalog__card-basket {
-  background-image: url("../img/basket.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   border: 0;
   background-color: $white;
   width: 20px;
   height: 19px;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: $aqua;
+  }
+
+  &:active {
+    fill: $aqua;
+    opacity: 0.3;
+  }
 }

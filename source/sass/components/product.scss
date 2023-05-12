@@ -6,7 +6,7 @@
     background-image: url("../img/zigzag-line.jpg");
     background-repeat: repeat-x;
     position: absolute;
-    bottom: 0;
+    bottom: -41px;
     left: 0;
     width: 100%;
     height: 6px;
@@ -14,6 +14,7 @@
     @media (min-width: 768px) {
       background-image: url("../img/zigzag-line-tablet.png");
       height: 17px;
+      bottom: 0;
     }
 
     @media (min-width: 1150px) {
@@ -44,9 +45,11 @@
 
   @media (min-width: 768px) {
     grid-column: 1/3;
+    grid-row: 1/2;
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 38px;
+    max-width: 630px;
   }
 
   @media (min-width: 1150px) {
@@ -70,7 +73,10 @@
 
   @media (min-width: 768px) {
     line-height: 17px;
-    position: absolute;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    padding: 5px 27px 0 0;
     text-align: center;
     width: 100px;
     top: 6px;
@@ -79,8 +85,9 @@
 
   @media (min-width: 1150px) {
     position: static;
+    grid-column: 1/2;
     grid-row: 1/6;
-    padding-top: 70px;
+    padding: 67px 10px 0 0;
     margin: 0 auto;
   }
 }
@@ -147,7 +154,7 @@
   height: auto;
 
   @media (min-width: 768px) {
-    margin: 12px 0 0 0;
+    margin: 12px 0 52px 0;
   }
 
   @media (min-width: 1150px) {
@@ -174,11 +181,26 @@
 }
 
 .product__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin-bottom: 42px;
   width: 100%;
   min-height: 52px;
   border: 2px solid $grey;
   background-color: $white;
+  max-height: 52px;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 
   @media (min-width: 768px) {
     width: 100%;

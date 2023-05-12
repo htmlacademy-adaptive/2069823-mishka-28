@@ -130,9 +130,11 @@
   line-height: 18px;
 }
 
-// Потом заменить
-
-fieldset {
+.order__form-type,
+.order__form-color,
+.order__form-name,
+.order__form-contacts,
+.order__form-area {
   font-size: 17px;
   line-height: 18px;
   border: 0;
@@ -150,6 +152,7 @@ fieldset {
   }
 }
 
+
 .order__radio-mark {
   position: absolute;
   width: 40px;
@@ -159,6 +162,14 @@ fieldset {
   border: 2px solid $grey;
   border-radius: 50%;
   border-color: $grey;
+
+  &:hover {
+    border-color: $aqua;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: 768px) {
     width: 52px;
@@ -187,6 +198,10 @@ fieldset {
     width: 23px;
     height: 23px;
   }
+}
+
+.order__radio-input:focus + .order__radio-mark {
+  border-color: $aqua;
 }
 
 .order__radio-label {
@@ -261,6 +276,14 @@ fieldset {
   border-color: $grey;
   margin-top: -5px;
 
+  &:hover {
+    border-color: $aqua;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 768px) {
     width: 52px;
     height: 52px;
@@ -272,17 +295,21 @@ fieldset {
 .order__checkbox-input[type="checkbox"]:checked + .order__checkbox-mark::before {
   content: "";
   position: absolute;
-  background-image: url("../img/tick.png");
+  background-image: url("../img/stack.svg#tick");
   top: 25%;
   left: 20%;
   width: 23px;
   height: 16px;
 
   @media (min-width: 768px) {
-    background-image: url("../img/tick-tablet.png");
+    background-image: url("../img/stack.svg#tick-tablet");
     width: 32px;
     height: 22px;
   }
+}
+
+.order__checkbox-input:focus + .order__checkbox-mark {
+  border-color: $aqua;
 }
 
 .order__checkbox-label {
@@ -357,6 +384,16 @@ fieldset {
   padding: 15px 0;
   width: 100%;
 
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
+
   @media (min-width: 768px) {
     padding: 12px 18px;
     font-size: 19px;
@@ -401,7 +438,7 @@ fieldset {
     right: 7px;
     width: 25px;
     height: 24px;
-    background-image: url("../img/phone.png");
+    background-image: url("../img/stack.svg#phone");
 
     @media (min-width: 768px) {
       top: 10px;
@@ -431,7 +468,7 @@ fieldset {
     right: 3px;
     width: 32px;
     height: 21px;
-    background-image: url("../img/email.png");
+    background-image: url("../img/stack.svg#email");
 
     @media (min-width: 768px) {
       top: 17px;
@@ -459,6 +496,17 @@ fieldset {
   border-bottom: 2px solid $grey;
   padding: 17px 0;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
+
 
   @media (min-width: 768px) {
     display: block;
@@ -492,6 +540,16 @@ fieldset {
   border-bottom: 2px solid $grey;
   padding: 16px 0;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
 
   @media (min-width: 768px) {
     display: block;
@@ -532,6 +590,16 @@ fieldset {
   border: 2px solid $grey;
   padding: 17px 7px 13px 17px;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $aqua;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $aqua;
+    outline: 0;
+  }
 
   @media (min-width: 768px) {
     padding: 15px;
@@ -594,6 +662,16 @@ fieldset {
   background-color: $white;
   border: 2px solid $grey;
   padding: 16px 0;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 
   @media (min-width: 768px) {
     width: 230px;

@@ -1,34 +1,114 @@
 @use "../base/variables.scss" as *;
 
+.modal-basket {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 2;
+}
+
+
 .modal-basket__wrapper {
-  display: none;
+  position: relative;
+  max-width: 566px;
+  margin: 0 auto;
+  top: 25vh;
+  background-color: $white;
+  padding: 29px 30px 46px;
+  border: 1px solid $b_grey-modal;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: 768px) {
+    padding: 38px 105px 46px;
+  }
 }
 
 .modal-basket__title {
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 0 50px;
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 57px;
+    padding: 0;
+  }
 }
 
 .modal-basket__subtitle {
+  display: block;
+  text-align: center;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: $grey;
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
+}
+
+.modal-basket__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.modal__label {
+  position: relative;
 }
 
 .modal-basket__button-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  top: 0;
+  left: 0;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $grey;
+  border: 2px solid rgba($grey, 0.1);
+
+  @media (min-width: 768px) {
+    width: 112px;
+  }
+}
+
+.modal__radio-input[type="radio"]:checked + .modal-basket__button-size {
+  border: 2px solid $aqua;
 }
 
 .modal-basket__button {
   color: $white;
   background-color: $aqua;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 }
 
 .modal-basket__item {
   list-style: none;
+}
+
+.modal-basket__close {
+  display: none;
 }

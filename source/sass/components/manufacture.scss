@@ -1,81 +1,72 @@
 @use "../base/variables.scss" as *;
 
-.manufacture {
-  display: flex;
-  flex-direction: column;
-}
-
 .manufacture__wrapper {
   border: 1px solid $b_grey;
 
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
+  &:hover .manufacture__inner-text,
+  &:focus .manufacture__inner-text {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active .manufacture__inner-text {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
   }
 
   @media (min-width: 1150px) {
     display: grid;
     grid-template-columns: 683px 1fr;
-    column-gap: 78px;
   }
 }
 
 .manufacture__title {
-  position: relative;
+  position: absolute;
   font-size: 17px;
   line-height: 24px;
-  padding: 22px 0 27px 91px;
+  top: 23px;
+  left: 120px;
+  max-width: 200px;
 
   &::before {
     content: "";
     width: 32px;
     height: 22px;
     position: absolute;
-    top: 36px;
-    left: 33px;
-    background-image: url("../img/videocamera.png");
-
-    @media (min-width: 358px) {
-      top: 20px;
-      left: 40px;
-    }
+    top: 13px;
+    left: -56px;
+    background-image: url("../img/stack.svg#videocamera");
 
     @media (min-width: 768px) {
       top: -3px;
-      left: 41px;
-      z-index: 2;
+      left: 0;
     }
 
     @media (min-width: 1150px) {
-      top: 46px;
+      top: -50px;
       left: 0;
     }
   }
 
   @media (min-width: 768px) {
-    display: flex;
+    position: relative;
     font-size: 20px;
-    padding: 0 0 0 105px;
+    top: 0;
+    left: 0;
+    padding-left: 64px;
     margin-bottom: 25px;
+    max-width: none;
   }
 
   @media (min-width: 1150px) {
-    padding: 96px 50px 0 0;
-    margin-bottom: 22px;
+    padding: 0;
+    margin-bottom: 26px;
   }
 }
 
-.manufacture__inner {
+.manufacture__inner-video {
   position: relative;
-  margin-bottom: 35px;
+  margin: 96px 0 0 0;
 
   @media (min-width: 768px) {
-    margin-bottom: 41px;
-    order: -1;
-  }
-
-  @media (min-width: 1150px) {
-    grid-row: 1/4;
     margin: 0;
   }
 }
@@ -87,28 +78,51 @@
 }
 
 .manufacture__play {
-  background-image: url("../../img/play.png");
+  background-image: url("../../img/stack.svg#play");
   width: 100px;
   height: 77px;
   border: none;
   border-radius: 25%;
   position: absolute;
-  top: calc(50% - 38px);
-  left: calc(50% - 50px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(120%);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(80%);
+    opacity: 0.6;
+  }
+}
+
+.manufacture__inner-text {
+  padding: 35px 32px;
+
+  @media (min-width: 768px) {
+    padding: 41px 41px 46px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 98px 57px 0 78px;
+  }
 }
 
 .manufacture__text {
-  margin: 0 0 40px 34px;
+  margin-bottom: 42px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: $grey;
 
   @media (min-width: 768px) {
-    margin: 0 0 40px 0;
+    margin-bottom: 39px;
     font-size: 15px;
     line-height: 30px;
-    padding: 0 42px;
   }
 
   @media (min-width: 1150px) {
@@ -118,29 +132,20 @@
 }
 
 .manufacture__button {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  padding: 15px 11px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 14px 10px;
   border: 2px solid $grey;
-  font-size: 18px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $grey;
-  width: 75%;
-  background-color: $white;
+  width: 100%;
 
-  @media (min-width: 768px) {
-    margin-bottom: 42px;
-    font-size: 17px;
-    width: 88%;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grey;
   }
 
-  @media (min-width: 1150px) {
-    font-size: 17px;
-    margin-bottom: 60px;
-    padding: 13px 0;
-    width: 80%;
-    margin-right: 60px;
+  &:active {
+    color: rgba($white, 0.7);
   }
 }

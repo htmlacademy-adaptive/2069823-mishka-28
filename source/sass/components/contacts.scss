@@ -67,6 +67,17 @@
   text-decoration: none;
   border-bottom: 1px solid $aqua3;
 
+  &:hover,
+  &:focus {
+    color: $aqua;
+  }
+
+  &:active {
+    color: $aqua;
+    border-bottom: 1px solid rgba($aqua, 0.3);
+  }
+
+
   @media (min-width: 768px) {
     padding-bottom: 4px;
   }
@@ -81,7 +92,7 @@
   width: 100%;
 
   @media (min-width: 768px) {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: 1150px) {
@@ -108,12 +119,25 @@
 }
 
 .contacts__button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin: 0 auto;
   width: calc(100% - 60px);
   height: 52px;
   border: 2px solid $grey;
   background-color: $white;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba($white, 0.7);
+  }
 
   @media (min-width: 768px) {
     width: 230px;

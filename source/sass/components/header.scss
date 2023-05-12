@@ -2,18 +2,18 @@
 
 .header {
   @media (min-width: 768px) {
-    display: block;
+    // display: block;
   }
 }
 
 .header__wrapper {
-  display: block;
-  justify-content: center;
-  background-color: $white;
+  // display: block;
+  // justify-content: center;
+  // background-color: $white;
 
-  @media (min-width: 1150px) {
-    display: block;
-  }
+  // @media (min-width: 1150px) {
+  //   display: block;
+  // }
 }
 
 .header__toggle {
@@ -69,20 +69,19 @@
 }
 
 .header__logo {
-  margin-left: calc(50% - 43px);
   padding: 22px 0 16px 0;
 
-  @media (min-width: 768px) {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 23px;
-    left: 49px;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
-  @media (min-width: 1150px) {
-    position: absolute;
-    top: 10%;
-    left: 500px;
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin-right: 26px;
   }
 }
