@@ -4,28 +4,28 @@
 .about__title {
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 82px;
+  margin-bottom: 28px;
 
   @media (min-width: 768px) {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 98px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 1150px) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 96px;
+    margin-bottom: 38px;
   }
 }
 
-.about .about__list:first-of-type {
-  margin-bottom: 83px;
+// .about .about__list:first-of-type {
+//   margin-bottom: 83px;
 
-  @media (min-width: 768px) {
-    margin: 0;
-  }
-}
+//   @media (min-width: 768px) {
+//     margin: 0;
+//   }
+// }
 
 .about__wrapper {
   @media (min-width: 768px) {
@@ -43,16 +43,21 @@
   font-size: 17px;
   line-height: 20px;
   list-style: none;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 59px;
+  }
 }
 
 .about__text {
   display: block;
-  margin-bottom: 83px;
+  // margin-bottom: 83px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 111px;
+    // margin-bottom: 111px;
   }
 }
 
@@ -61,76 +66,63 @@
 }
 
 .about__img-flower {
-  position: absolute;
-  bottom: 57px;
+  position: relative;
+  left: 8px;
+  margin-bottom: 17px;
   width: 33px;
   height: 38px;
   background-image: url("../img/stack.svg#flower");
 
   @media (min-width: 768px) {
-    bottom: 63px;
-    left: 8px;
+    margin-bottom: 19px;
   }
 }
 
 .about__img-money {
-  position: absolute;
-  bottom: 66px;
+  position: relative;
+  bottom: 3px;
+  margin-bottom: 24px;
   width: 47px;
   height: 27px;
   background-image: url("../img/stack.svg#money");
-
-  @media (min-width: 768px) {
-    bottom: 72px;
-  }
 }
 
 .about__img-heart {
-  position: absolute;
-  bottom: 60px;
+  position: relative;
+  left: 7px;
+  margin-bottom: 24px;
   width: 34px;
   height: 27px;
   background-image: url("../img/stack.svg#heart");
-
-  @media (min-width: 768px) {
-    bottom: 67px;
-    left: 8px;
-  }
 }
 
 .about__img-clew {
-  position: absolute;
-  bottom: 54px;
+  position: relative;
+  left: 3px;
+  margin-bottom: 16px;
   width: 35px;
   height: 35px;
   background-image: url("../img/stack.svg#clew");
 
   @media (min-width: 768px) {
-    bottom: 62px;
+    margin-bottom: 24px;
   }
 }
 
 .about__img-rocket {
-  position: absolute;
-  bottom: 68px;
+  position: relative;
+  left: -6px;
+  margin-bottom: 27px;
   width: 55px;
   height: 23px;
   background-image: url("../img/stack.svg#rocket");
-
-  @media (min-width: 768px) {
-    bottom: 72px;
-    left: -4px;
-  }
 }
 
 .about__img-box {
-  position: absolute;
-  bottom: 60px;
+  position: relative;
+  left: 3px;
+  margin-bottom: 19px;
   width: 33px;
   height: 32px;
   background-image: url("../img/stack.svg#box");
-
-  @media (min-width: 768px) {
-    bottom: 66px;
-  }
 }

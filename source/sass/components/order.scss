@@ -18,8 +18,9 @@
 
     &::after {
       content: "";
-      position: absolute;
-      top: 213px;
+      display: block;
+      position: relative;
+      top: 75px;
       right: 0;
       width: 100%;
       height: 24px;
@@ -29,7 +30,7 @@
       @media (min-width: 1150px) {
         background-image: url("../img/zigzag-desktop.png");
         height: 34px;
-        top: 237px;
+        top: 96px;
       }
     }
   }
