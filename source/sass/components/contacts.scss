@@ -88,17 +88,33 @@
 }
 
 .contacts__map {
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
   margin-bottom: 36px;
   width: 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
   @media (min-width: 768px) {
+    background-image: url("../img/map-tablet@1x.jpg");
     margin-bottom: 52px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1150px) {
     grid-column: 3/4;
     grid-row: 1/4;
     margin: 0;
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }
 

@@ -20,6 +20,13 @@ navToggle.addEventListener('click', function () {
     navUser.classList.add('header-nav__open');
     navUser.classList.remove('header-nav__closed');
   }
+  if (navToggle.classList.contains('header__toggle')) {
+    navToggle.classList.remove('header__toggle');
+    navToggle.classList.add('header__toggle--open');
+  } else {
+    navToggle.classList.add('header__toggle');
+    navToggle.classList.remove('header__toggle--open');
+  }
 });
 
 
