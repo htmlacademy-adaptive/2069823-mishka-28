@@ -1,21 +1,5 @@
 @use "../base/variables.scss" as *;
 
-.header {
-  @media (min-width: 768px) {
-    // display: block;
-  }
-}
-
-.header__wrapper {
-  // display: block;
-  // justify-content: center;
-  // background-color: $white;
-
-  // @media (min-width: 1150px) {
-  //   display: block;
-  // }
-}
-
 .header__toggle {
   position: absolute;
   top: 33px;
