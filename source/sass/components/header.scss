@@ -28,8 +28,9 @@
 }
 
 .header__toggle--open {
+  position: absolute;
   top: 40px;
-  right: 35px;
+  right: 50px;
 
   &::before,
   &::after {

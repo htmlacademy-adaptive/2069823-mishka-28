@@ -18,9 +18,8 @@
 
     &::after {
       content: "";
-      display: block;
-      position: relative;
-      top: 75px;
+      position: absolute;
+      top: 213px;
       right: 0;
       width: 100%;
       height: 24px;
@@ -30,7 +29,7 @@
       @media (min-width: 1150px) {
         background-image: url("../img/zigzag-desktop.png");
         height: 34px;
-        top: 96px;
+        top: 237px;
       }
     }
   }
@@ -214,6 +213,11 @@
   }
 }
 
+.order__radio-input:disabled + .order__radio-mark {
+  opacity: 0.1;
+}
+
+
 // ЦВЕТ
 
 
@@ -311,6 +315,10 @@
 
 .order__checkbox-input:focus + .order__checkbox-mark {
   border-color: $aqua;
+}
+
+.order__checkbox-input:disabled + .order__checkbox-mark {
+  opacity: 0.1;
 }
 
 .order__checkbox-label {
