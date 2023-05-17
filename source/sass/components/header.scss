@@ -16,6 +16,11 @@
   }
 }
 
+.header__toggle--js {
+  display: none;
+}
+
+
 .header__toggle::before {
   content: "";
   position: absolute;

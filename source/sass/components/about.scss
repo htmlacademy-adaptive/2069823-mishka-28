@@ -19,14 +19,6 @@
   }
 }
 
-// .about .about__list:first-of-type {
-//   margin-bottom: 83px;
-
-//   @media (min-width: 768px) {
-//     margin: 0;
-//   }
-// }
-
 .about__wrapper {
   @media (min-width: 768px) {
     display: grid;
@@ -52,12 +44,10 @@
 
 .about__text {
   display: block;
-  // margin-bottom: 83px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 22px;
-    // margin-bottom: 111px;
   }
 }
 

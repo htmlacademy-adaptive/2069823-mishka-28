@@ -4,6 +4,7 @@ let navToggle = document.querySelector('.header__toggle');
 
 navMain.classList.remove('header-nav__no-js');
 navUser.classList.remove('header-nav__no-js');
+navToggle.classList.remove('header__toggle--js');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('header-nav__open')) {
@@ -39,26 +40,26 @@ let openCatalogButtons =document.querySelectorAll('.manufacture__button');
 openPopupButtons.forEach((a) => {
   a.addEventListener('click', (e) => {
       e.preventDefault();
-      popup.classList.remove('modal-basket__close');
+      popup.classList.remove('modal-basket--close');
   })
 });
 
 openCatalogButtons.forEach((a) => {
   a.addEventListener('click', (e) => {
       e.preventDefault();
-      popup.classList.remove('modal-basket__close');
+      popup.classList.remove('modal-basket--close');
   })
 });
 
 openBasketButtons.forEach((a) => {
   a.addEventListener('click', (e) => {
       e.preventDefault();
-      popup.classList.remove('modal-basket__close');
+      popup.classList.remove('modal-basket--close');
   })
 });
 
 document.addEventListener('click', (e) => {
   if(e.target === popup) {
-      popup.classList.add('modal-basket__close');
+      popup.classList.add('modal-basket--close');
   }
 });
