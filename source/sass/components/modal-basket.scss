@@ -59,7 +59,7 @@
   margin-bottom: 31px;
 }
 
-.modal__label {
+.modal-basket__label {
   position: relative;
 }
 
@@ -82,7 +82,7 @@
   }
 }
 
-.modal__radio-input[type="radio"]:checked + .modal-basket__button-size {
+.modal-basket__radio-input[type="radio"]:checked + .modal-basket__button-size {
   border: 2px solid $aqua;
 }
 
@@ -109,6 +109,6 @@
   list-style: none;
 }
 
-.modal-basket__close {
+.modal-basket--close {
   display: none;
 }

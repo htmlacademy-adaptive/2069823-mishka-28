@@ -39,26 +39,26 @@ let openCatalogButtons =document.querySelectorAll('.manufacture__button');
 openPopupButtons.forEach((a) => {
   a.addEventListener('click', (e) => {
       e.preventDefault();
-      popup.classList.remove('modal-basket__close');
+      popup.classList.remove('modal-basket--close');
   })
 });
 
 openCatalogButtons.forEach((a) => {
   a.addEventListener('click', (e) => {
       e.preventDefault();
-      popup.classList.remove('modal-basket__close');
+      popup.classList.remove('modal-basket--close');
   })
 });
 
 openBasketButtons.forEach((a) => {
   a.addEventListener('click', (e) => {
       e.preventDefault();
-      popup.classList.remove('modal-basket__close');
+      popup.classList.remove('modal-basket--close');
   })
 });
 
 document.addEventListener('click', (e) => {
   if(e.target === popup) {
-      popup.classList.add('modal-basket__close');
+      popup.classList.add('modal-basket--close');
   }
 });
