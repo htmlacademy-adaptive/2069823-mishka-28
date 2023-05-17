@@ -1,5 +1,9 @@
 @use "../base/variables.scss" as *;
 
+.header-nav {
+  position: relative;
+}
+
 .header__wrapper {
   @media (min-width: 768px) {
     display: grid;
