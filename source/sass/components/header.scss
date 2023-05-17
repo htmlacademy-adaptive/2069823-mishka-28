@@ -1,6 +1,7 @@
 @use "../base/variables.scss" as *;
 
 .header__toggle {
+
   position: absolute;
   top: 33px;
   right: 30px;
@@ -15,6 +16,11 @@
     display: none;
   }
 }
+
+.header__toggle--js {
+  display: none;
+}
+
 
 .header__toggle::before {
   content: "";
@@ -52,6 +58,7 @@
     transform: rotate(-45deg);
   }
 }
+
 
 .header__logo {
   padding: 22px 0 16px 0;

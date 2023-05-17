@@ -4,6 +4,7 @@ let navToggle = document.querySelector('.header__toggle');
 
 navMain.classList.remove('header-nav__no-js');
 navUser.classList.remove('header-nav__no-js');
+navToggle.classList.remove('header__toggle--js');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('header-nav__open')) {
